@@ -1,0 +1,22 @@
+{
+  "name": "felixtjernberg-se",
+  "version": "1.0.0",
+  "description": "Source code for felixtjernberg.se website",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filleflex/felixtjernberg-se.git"
+  },
+  "author": "Felix Tjernberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filleflex/felixtjernberg-se/issues"
+  },
+  "homepage": "https://github.com/filleflex/felixtjernberg-se#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0"
+  }
+}
