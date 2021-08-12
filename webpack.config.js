@@ -12,7 +12,7 @@ const threeMinifier = new ThreeMinifierPlugin()
 
 module.exports = {
   devServer: {
-    contentBase: path.join(__dirname, 'build'),
+    contentBase: path.join(__dirname, 'dist'),
     hot: true
   },
   devtool: devtool,
@@ -23,7 +23,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpe?g|gif|webp|tiff?)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
         type: 'asset'
       },
       {
@@ -31,8 +31,8 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
-        loader: 'pug-loader',
-        test: /\.pug$/i
+        loader: 'html-loader',
+        test: /\.html$/i
       },
       {
         exclude: /node_modules/,
@@ -71,20 +71,19 @@ module.exports = {
     assetModuleFilename: 'image/[hash][ext][query]',
     clean: true,
     filename: './javascript/[name].[contenthash].js',
-    path: path.join(__dirname, 'build')
+    path: path.join(__dirname, 'dist')
   },
   plugins: [
     threeMinifier,
     new MiniCssExtractPlugin(),
-    new HtmlWebpackPlugin({ template: './source/template/index.pug' })
+    new HtmlWebpackPlugin({ template: './source/index.html' })
   ],
   resolve: {
     alias: {
       image: './image',
       javascript: './javascript',
       stylesheet: './stylesheet',
-      svg: './svg',
-      template: './template'
+      svg: './svg'
     },
     plugins: [threeMinifier.resolver]
   },
