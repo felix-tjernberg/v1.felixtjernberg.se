@@ -12,7 +12,7 @@ const threeMinifier = new ThreeMinifierPlugin()
 
 module.exports = {
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'build'),
     hot: true
   },
   devtool: devtool,
@@ -71,7 +71,7 @@ module.exports = {
     assetModuleFilename: 'image/[hash][ext][query]',
     clean: true,
     filename: './javascript/[name].[contenthash].js',
-    path: path.join(__dirname, 'dist')
+    path: path.join(__dirname, 'build')
   },
   plugins: [
     threeMinifier,
