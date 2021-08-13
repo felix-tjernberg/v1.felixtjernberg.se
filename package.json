@@ -3,7 +3,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "build-dev": "webpack",
-    "dev": "webpack serve",
+    "serve": "webpack serve",
     "serve-build": "cross-env NODE_ENV=production webpack serve"
   },
   "devDependencies": {
@@ -20,8 +20,6 @@
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.0",
-    "responsive-loader": "^2.3.0",
-    "sharp": "^0.28.3",
     "webpack": "^5.49.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"

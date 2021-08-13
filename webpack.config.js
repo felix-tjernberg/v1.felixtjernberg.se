@@ -22,18 +22,9 @@ module.exports = {
   mode: mode,
   module: {
     rules: [
-      // {
-      //   test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
-      //   type: 'asset'
-      // },
       {
-        test: /\.(jpe?g|png|webp)$/i,
-        use: {
-          loader: 'responsive-loader',
-          options: {
-            adapter: require('responsive-loader/sharp')
-          }
-        }
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+        type: 'asset'
       },
       {
         test: /\.css$/i,
