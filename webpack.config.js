@@ -88,6 +88,7 @@ if (process.env.NODE_ENV) {
   }
 } else {
   // Development configuration
+  const CopyPlugin = require('copy-webpack-plugin')
   module.exports = {
     devServer: {
       contentBase: path.join(__dirname, 'build'),
@@ -136,6 +137,9 @@ if (process.env.NODE_ENV) {
       path: path.join(__dirname, 'build')
     },
     plugins: [
+      new CopyPlugin({
+        patterns: [{ from: 'source/image', to: 'image' }]
+      }),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({ template: './source/index.html' })
     ],
