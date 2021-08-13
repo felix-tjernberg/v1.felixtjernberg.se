@@ -65,9 +65,9 @@ if (process.env.NODE_ENV) {
       }
     },
     output: {
-      assetModuleFilename: 'image/[hash][ext][query]',
+      assetModuleFilename: './[hash][ext][query]',
       clean: true,
-      filename: './javascript/[name].[contenthash].js',
+      filename: './[name].[contenthash].js',
       path: path.join(__dirname, 'build')
     },
     plugins: [
@@ -77,10 +77,11 @@ if (process.env.NODE_ENV) {
     ],
     resolve: {
       alias: {
-        image: './image',
-        javascript: './javascript',
-        stylesheet: './stylesheet',
-        svg: './svg'
+        icon: path.resolve(__dirname, 'source/assets/image'),
+        image: path.resolve(__dirname, 'source/assets/icon'),
+        javascript: path.resolve(__dirname, 'source/javascript'),
+        stylesheet: path.resolve(__dirname, 'source/stylesheet'),
+        svg: path.resolve(__dirname, 'source/assets/svg')
       },
       plugins: [threeMinifier.resolver]
     },
@@ -101,10 +102,6 @@ if (process.env.NODE_ENV) {
     mode: 'development',
     module: {
       rules: [
-        {
-          test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
-          type: 'asset'
-        },
         {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader']
@@ -131,24 +128,28 @@ if (process.env.NODE_ENV) {
       }
     },
     output: {
-      assetModuleFilename: 'image/[hash][ext][query]',
       clean: true,
       filename: './javascript/[name].[contenthash].js',
       path: path.join(__dirname, 'build')
     },
     plugins: [
       new CopyPlugin({
-        patterns: [{ from: 'source/image', to: 'image' }]
+        patterns: [
+          { from: 'source/assets/icon', to: 'icon' },
+          { from: 'source/assets/svg', to: 'svg' },
+          { from: 'source/assets/image', to: 'image' }
+        ]
       }),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({ template: './source/index.html' })
     ],
     resolve: {
       alias: {
-        image: './image',
+        icon: './assets/icon',
+        image: './assets/image',
         javascript: './javascript',
         stylesheet: './stylesheet',
-        svg: './svg'
+        svg: './assets/svg'
       }
     },
     stats: 'errors-warnings',
