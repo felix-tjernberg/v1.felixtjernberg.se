@@ -1,4 +1,5 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const { ESBuildMinifyPlugin } = require('esbuild-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ThreeMinifierPlugin = require('@yushijinhun/three-minifier-webpack')
@@ -29,27 +30,30 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
-      },
-      {
-        loader: 'html-loader',
-        test: /\.html$/i
-      },
-      {
-        exclude: /node_modules/,
-        test: /\.js$/i,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            cacheDirectory: true,
-            presets: ['@babel/preset-env']
-          }
-        }
       }
+      // {
+      //   loader: 'html-loader',
+      //   test: /\.html$/i
+      // },
+      // {
+      //   exclude: /node_modules/,
+      //   test: /\.js$/i,
+      //   use: {
+      //     loader: 'babel-loader',
+      //     options: {
+      //       cacheDirectory: true,
+      //       presets: ['@babel/preset-env']
+      //     }
+      //   }
+      // }
     ]
   },
   optimization: {
     minimizer: [
-      '...',
+      // '...', // Uncomment this and comment ESBuildMinifyPlugin to save 3% of build weight
+      new ESBuildMinifyPlugin({
+        target: 'es2015'
+      }),
       new CssMinimizerPlugin({
         minify: CssMinimizerPlugin.cleanCssMinify,
         minimizerOptions: { level: 2 }
@@ -74,7 +78,7 @@ module.exports = {
     path: path.join(__dirname, 'build')
   },
   plugins: [
-    threeMinifier,
+    // threeMinifier, // Uncomment this and plugins key in resolve to save 200kb
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({ template: './source/index.html' })
   ],
@@ -84,8 +88,9 @@ module.exports = {
       javascript: './javascript',
       stylesheet: './stylesheet',
       svg: './svg'
-    },
-    plugins: [threeMinifier.resolver]
+    }
+    // plugins: [threeMinifier.resolver]
   },
+  stats: 'errors-warnings',
   target: target
 }
