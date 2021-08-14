@@ -135,8 +135,8 @@ if (process.env.NODE_ENV) {
     plugins: [
       new CopyPlugin({
         patterns: [
-          { from: 'source/assets/icon', to: 'icon' },
-          { from: 'source/assets/svg', to: 'svg' },
+          // { from: 'source/assets/icon', to: 'icon' },
+          // { from: 'source/assets/svg', to: 'svg' },
           { from: 'source/assets/image', to: 'image' }
         ]
       }),
