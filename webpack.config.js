@@ -81,7 +81,8 @@ if (process.env.NODE_ENV) {
         Image: path.resolve(__dirname, 'source/assets/image'),
         Javascript: path.resolve(__dirname, 'source/javascript'),
         Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
-        Svg: path.resolve(__dirname, 'source/assets/svg')
+        Svg: path.resolve(__dirname, 'source/assets/svg'),
+        Texture: path.resolve(__dirname, 'source/assets/texture')
       },
       plugins: [threeMinifier.resolver]
     },
@@ -102,6 +103,10 @@ if (process.env.NODE_ENV) {
     mode: 'development',
     module: {
       rules: [
+        {
+          test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+          type: 'asset'
+        },
         {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader']
@@ -134,11 +139,7 @@ if (process.env.NODE_ENV) {
     },
     plugins: [
       new CopyPlugin({
-        patterns: [
-          // { from: 'source/assets/icon', to: 'icon' },
-          // { from: 'source/assets/svg', to: 'svg' },
-          { from: 'source/assets/image', to: 'image' }
-        ]
+        patterns: [{ from: 'source/assets/image', to: './' }]
       }),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({ template: './source/index.html' })
@@ -149,7 +150,8 @@ if (process.env.NODE_ENV) {
         Image: path.resolve(__dirname, 'source/assets/image'),
         Javascript: path.resolve(__dirname, 'source/javascript'),
         Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
-        Svg: path.resolve(__dirname, 'source/assets/svg')
+        Svg: path.resolve(__dirname, 'source/assets/svg'),
+        Texture: path.resolve(__dirname, 'source/assets/texture')
       }
     },
     stats: 'errors-warnings',
