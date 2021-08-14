@@ -77,11 +77,11 @@ if (process.env.NODE_ENV) {
     ],
     resolve: {
       alias: {
-        icon: path.resolve(__dirname, 'source/assets/image'),
-        image: path.resolve(__dirname, 'source/assets/icon'),
-        javascript: path.resolve(__dirname, 'source/javascript'),
-        stylesheet: path.resolve(__dirname, 'source/stylesheet'),
-        svg: path.resolve(__dirname, 'source/assets/svg')
+        Icon: path.resolve(__dirname, 'source/assets/image'),
+        Image: path.resolve(__dirname, 'source/assets/icon'),
+        Javascript: path.resolve(__dirname, 'source/javascript'),
+        Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
+        Svg: path.resolve(__dirname, 'source/assets/svg')
       },
       plugins: [threeMinifier.resolver]
     },
@@ -145,11 +145,11 @@ if (process.env.NODE_ENV) {
     ],
     resolve: {
       alias: {
-        icon: './assets/icon',
-        image: './assets/image',
-        javascript: './javascript',
-        stylesheet: './stylesheet',
-        svg: './assets/svg'
+        Icon: path.resolve(__dirname, 'source/assets/image'),
+        Image: path.resolve(__dirname, 'source/assets/icon'),
+        Javascript: path.resolve(__dirname, 'source/javascript'),
+        Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
+        Svg: path.resolve(__dirname, 'source/assets/svg')
       }
     },
     stats: 'errors-warnings',
