@@ -1,8 +1,14 @@
-import 'stylesheet/reset.css'
+import 'Stylesheet/reset.css'
+import 'Stylesheet/test.css'
 
-import(/* webpackChunkName: "threeJSScene1" */ 'javascript/threeJSScene1').then(
-  (module) => {
-    const addThreeJSScene1 = module.default
-    addThreeJSScene1()
-  }
+import(
+  /* webpackChunkName: "landing-scene" */ 'Javascript/landing-scene/landing-scene.js'
 )
+// ).then((module) => {
+//   const renderFrame = module.default
+//   renderFrame()
+// })
+
+// import(
+//   /* webpackChunkName: "landing-scene" */ 'javascript/landing-scene/landing-scene.js'
+// )
