@@ -77,8 +77,8 @@ if (process.env.NODE_ENV) {
     ],
     resolve: {
       alias: {
-        Icon: path.resolve(__dirname, 'source/assets/image'),
-        Image: path.resolve(__dirname, 'source/assets/icon'),
+        Icon: path.resolve(__dirname, 'source/assets/icon'),
+        Image: path.resolve(__dirname, 'source/assets/image'),
         Javascript: path.resolve(__dirname, 'source/javascript'),
         Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
         Svg: path.resolve(__dirname, 'source/assets/svg')
@@ -145,8 +145,8 @@ if (process.env.NODE_ENV) {
     ],
     resolve: {
       alias: {
-        Icon: path.resolve(__dirname, 'source/assets/image'),
-        Image: path.resolve(__dirname, 'source/assets/icon'),
+        Icon: path.resolve(__dirname, 'source/assets/icon'),
+        Image: path.resolve(__dirname, 'source/assets/image'),
         Javascript: path.resolve(__dirname, 'source/javascript'),
         Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
         Svg: path.resolve(__dirname, 'source/assets/svg')
