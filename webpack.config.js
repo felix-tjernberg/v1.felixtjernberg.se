@@ -129,7 +129,7 @@ if (process.env.NODE_ENV) {
     },
     output: {
       clean: true,
-      filename: './javascript/[name].[contenthash].js',
+      filename: './[name].[contenthash].js',
       path: path.join(__dirname, 'build')
     },
     plugins: [
