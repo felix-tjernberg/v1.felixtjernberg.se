@@ -18,6 +18,6 @@ module.exports = {
     semi: ['error', 'never'],
     'sort-imports': [2],
     'sort-keys': [2, 'asc', { natural: true }],
-    'sort-vars': [2]
+    'sort-vars': [1]
   }
 }
