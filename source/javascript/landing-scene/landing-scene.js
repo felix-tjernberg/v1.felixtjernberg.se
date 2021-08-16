@@ -39,10 +39,16 @@ window.addEventListener('resize', () => {
 scene.add(ambientLight, box, pointLightOne)
 loadGrass(scene)
 
-// TODO remove runningRenderer before production
+// TODO remove runningRenderer and orbit controls
+// eslint-disable-next-line sort-imports
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+const controls = new OrbitControls(camera, renderer.domElement)
 let runningRenderer
+
 function renderFrame() {
   rotationAnimation(box)
+
+  controls.update()
 
   runningRenderer = requestAnimationFrame(renderFrame)
   renderer.render(scene, camera)
@@ -62,7 +68,7 @@ document.querySelector('#turn-blue').addEventListener('click', () => {
 })
 
 // TODO Developer tools (Comment/Remove everything below before production)
-/* eslint-disable-next-line sort-imports*/ /* eslint-disable-next-line no-unused-vars*/
+/* eslint-disable-next-line sort-imports */ /* eslint-disable-next-line no-unused-vars*/
 import { developerPanel } from './developer-panel'
 
 import { pointLightOneHelper } from './lights'
