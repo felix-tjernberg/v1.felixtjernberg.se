@@ -1,13 +1,16 @@
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const CopyPlugin = require('copy-webpack-plugin'),
+  CssMinimizerPlugin = require('css-minimizer-webpack-plugin'),
+  HtmlWebpackPlugin = require('html-webpack-plugin'),
+  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+  path = require('path')
 const { ESBuildMinifyPlugin } = require('esbuild-loader')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const path = require('path')
 
 if (process.env.NODE_ENV) {
   // Production configuration
   const ThreeMinifierPlugin = require('@yushijinhun/three-minifier-webpack')
   const threeMinifier = new ThreeMinifierPlugin()
+
   module.exports = {
     devServer: {
       contentBase: path.join(__dirname, 'build')
@@ -36,7 +39,7 @@ if (process.env.NODE_ENV) {
           test: /\.html$/i
         },
         {
-          exclude: /node_modules/,
+          exclude: [/node_modules/, /draco/],
           test: /\.js$/i,
           use: {
             loader: 'babel-loader',
@@ -51,6 +54,12 @@ if (process.env.NODE_ENV) {
     optimization: {
       minimizer: [
         '...',
+        new CopyPlugin({
+          patterns: [
+            // { from: 'source/assets/image', to: './' },
+            { from: 'source/javascript/draco/', to: './' }
+          ]
+        }),
         new CssMinimizerPlugin({
           minify: CssMinimizerPlugin.cleanCssMinify,
           minimizerOptions: { level: 2 }
@@ -60,6 +69,7 @@ if (process.env.NODE_ENV) {
       runtimeChunk: 'single',
       splitChunks: {
         cacheGroups: {
+          chunks: 'all',
           vendor: {
             chunks: 'all',
             name: 'vendors',
@@ -77,7 +87,10 @@ if (process.env.NODE_ENV) {
     plugins: [
       threeMinifier,
       new MiniCssExtractPlugin(),
-      new HtmlWebpackPlugin({ template: './source/index.html' })
+      new HtmlWebpackPlugin({ template: './source/index.html' }),
+      new BundleAnalyzerPlugin({
+        analyzerMode: process.env.NODE_STATS || 'disabled'
+      })
     ],
     resolve: {
       alias: {
@@ -95,7 +108,6 @@ if (process.env.NODE_ENV) {
   }
 } else {
   // Development configuration
-  const CopyPlugin = require('copy-webpack-plugin')
   module.exports = {
     devServer: {
       contentBase: path.join(__dirname, 'build'),
@@ -133,6 +145,7 @@ if (process.env.NODE_ENV) {
       runtimeChunk: 'single',
       splitChunks: {
         cacheGroups: {
+          chunks: 'all',
           vendor: {
             chunks: 'all',
             name: 'vendors',
@@ -148,7 +161,10 @@ if (process.env.NODE_ENV) {
     },
     plugins: [
       new CopyPlugin({
-        patterns: [{ from: 'source/assets/image', to: './' }]
+        patterns: [
+          { from: 'source/assets/image', to: './' },
+          { from: 'source/javascript/draco/draco_decoder.wasm', to: './' }
+        ]
       }),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({ template: './source/index.html' })

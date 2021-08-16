@@ -1,9 +1,8 @@
-import { PerspectiveCamera, Scene, WebGLRenderer } from 'three'
+import { Clock, PerspectiveCamera, Scene, WebGLRenderer } from 'three'
 import { ambientLight, pointLightOne } from './lights'
+import { droneMixer, loadDroneModel } from './drone-model'
 import { box } from './box'
-import handleKeyUp from '../developer-control'
 import handleResize from 'Javascript/handle-resize'
-import loadGrass from './grass-model'
 import rotationAnimation from './rotation-animation'
 
 /* eslint-disable sort-vars */
@@ -29,7 +28,6 @@ camera.position.z = 20
 camera.position.y = 10
 camera.lookAt(0, 0, 0)
 renderer.setSize(canvas.width, canvas.height)
-
 // Setup window resize event
 window.addEventListener('resize', () => {
   handleResize(camera, canvas, parentElement, renderer)
@@ -37,16 +35,20 @@ window.addEventListener('resize', () => {
 
 // Add assets
 scene.add(ambientLight, box, pointLightOne)
-loadGrass(scene)
+loadDroneModel(scene)
 
 // TODO remove runningRenderer and orbit controls
 // eslint-disable-next-line sort-imports
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 const controls = new OrbitControls(camera, renderer.domElement)
 let runningRenderer
+const clock = new Clock()
 
 function renderFrame() {
   rotationAnimation(box)
+
+  let delta = clock.getDelta()
+  if (droneMixer) droneMixer.update(delta)
 
   controls.update()
 
@@ -66,10 +68,10 @@ document.querySelector('#turn-green').addEventListener('click', () => {
 document.querySelector('#turn-blue').addEventListener('click', () => {
   box.material.color.setHex(0x0000ff)
 })
-
 // TODO Developer tools (Comment/Remove everything below before production)
-/* eslint-disable-next-line sort-imports */ /* eslint-disable-next-line no-unused-vars*/
+/* eslint-disable sort-imports */ /* eslint-disable no-unused-vars*/
 import { developerPanel } from './developer-panel'
+import handleKeyUp from '../developer-control'
 
 import { pointLightOneHelper } from './lights'
 scene.add(pointLightOneHelper)
