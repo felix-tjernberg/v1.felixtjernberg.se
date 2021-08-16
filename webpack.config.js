@@ -24,6 +24,10 @@ if (process.env.NODE_ENV) {
           type: 'asset'
         },
         {
+          test: /\.glb|gltf$/,
+          use: [{ loader: 'file-loader', options: { esModule: false } }]
+        },
+        {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader']
         },
@@ -80,6 +84,7 @@ if (process.env.NODE_ENV) {
         Icon: path.resolve(__dirname, 'source/assets/icon'),
         Image: path.resolve(__dirname, 'source/assets/image'),
         Javascript: path.resolve(__dirname, 'source/javascript'),
+        Model: path.resolve(__dirname, 'source/assets/model'),
         Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
         Svg: path.resolve(__dirname, 'source/assets/svg'),
         Texture: path.resolve(__dirname, 'source/assets/texture')
@@ -106,6 +111,10 @@ if (process.env.NODE_ENV) {
         {
           test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
           type: 'asset'
+        },
+        {
+          test: /\.glb|gltf$/,
+          use: [{ loader: 'file-loader', options: { esModule: false } }]
         },
         {
           test: /\.css$/i,
@@ -149,6 +158,7 @@ if (process.env.NODE_ENV) {
         Icon: path.resolve(__dirname, 'source/assets/icon'),
         Image: path.resolve(__dirname, 'source/assets/image'),
         Javascript: path.resolve(__dirname, 'source/javascript'),
+        Model: path.resolve(__dirname, 'source/assets/model'),
         Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
         Svg: path.resolve(__dirname, 'source/assets/svg'),
         Texture: path.resolve(__dirname, 'source/assets/texture')

@@ -3,4 +3,7 @@ import { rockMaterial } from './materials'
 
 const boxGeometry = new BoxGeometry(1, 1, 1)
 
-export const box = new Mesh(boxGeometry, rockMaterial)
+const box = new Mesh(boxGeometry, rockMaterial)
+box.position.y = 10
+
+export { box }

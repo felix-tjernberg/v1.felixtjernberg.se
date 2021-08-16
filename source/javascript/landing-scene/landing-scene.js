@@ -1,8 +1,9 @@
 import { PerspectiveCamera, Scene, WebGLRenderer } from 'three'
-import { pointLightOne, pointLightTwo } from './point-lights'
+import { ambientLight, pointLightOne } from './lights'
 import { box } from './box'
 import handleKeyUp from '../developer-control'
 import handleResize from 'Javascript/handle-resize'
+import loadGrass from './grass-model'
 import rotationAnimation from './rotation-animation'
 
 /* eslint-disable sort-vars */
@@ -24,7 +25,9 @@ const camera = new PerspectiveCamera(
   ),
   scene = new Scene(),
   renderer = new WebGLRenderer({ canvas: renderCanvas })
-camera.position.z = 5
+camera.position.z = 20
+camera.position.y = 10
+camera.lookAt(0, 0, 0)
 renderer.setSize(canvas.width, canvas.height)
 
 // Setup window resize event
@@ -32,7 +35,9 @@ window.addEventListener('resize', () => {
   handleResize(camera, canvas, parentElement, renderer)
 })
 
-scene.add(box, pointLightOne, pointLightTwo)
+// Add assets
+scene.add(ambientLight, box, pointLightOne)
+loadGrass(scene)
 
 // TODO remove runningRenderer before production
 let runningRenderer
@@ -57,15 +62,10 @@ document.querySelector('#turn-blue').addEventListener('click', () => {
 })
 
 // TODO Developer tools (Comment/Remove everything below before production)
-/* eslint-disable-next-line sort-imports */
-import * as dat from 'dat.gui'
-import { PointLightHelper } from 'three'
-/* eslint-disable-next-line sort-imports */
-const developerPanel = new dat.GUI()
+/* eslint-disable-next-line sort-imports*/ /* eslint-disable-next-line no-unused-vars*/
+import { developerPanel } from './developer-panel'
 
-const pointLightOneFolder = developerPanel.addFolder('Light 1')
-pointLightOneFolder.add(pointLightOne, 'intensity').step(0.01)
-const pointLightOneHelper = new PointLightHelper(pointLightOne, 1)
+import { pointLightOneHelper } from './lights'
 scene.add(pointLightOneHelper)
 
 // Developer control, remove runningRenderer variable later
