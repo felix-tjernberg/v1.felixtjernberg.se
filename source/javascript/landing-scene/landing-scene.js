@@ -22,6 +22,7 @@ const camera = new PerspectiveCamera(
     0.1,
     1000
   ),
+  clock = new Clock(),
   scene = new Scene(),
   renderer = new WebGLRenderer({ canvas: renderCanvas })
 camera.position.z = 20
@@ -42,7 +43,6 @@ loadDroneModel(scene)
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 const controls = new OrbitControls(camera, renderer.domElement)
 let runningRenderer
-const clock = new Clock()
 
 function renderFrame() {
   rotationAnimation(box)
