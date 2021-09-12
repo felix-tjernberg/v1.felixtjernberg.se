@@ -7,5 +7,19 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Felix Tjernberg
   body
-    include ./header
-    include ./test/threejs.pug
+    include ./header.pug
+    section
+      include ./im-a.pug
+    section
+      include ./fullstack-developer.pug
+    section
+      include ./football-coach.pug
+    section
+      include ./stem.pug
+    section
+      include ./stuff-made.pug
+    div
+      section
+        include ./closing.pug
+      include ./footer.pug
+    //- include ./test/threejs.pug
