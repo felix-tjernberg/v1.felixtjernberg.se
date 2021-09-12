@@ -35,8 +35,8 @@ if (process.env.NODE_ENV) {
           use: [MiniCssExtractPlugin.loader, 'css-loader']
         },
         {
-          loader: 'html-loader',
-          test: /\.html$/i
+          loader: 'pug-loader',
+          test: /\.pug$/i
         },
         {
           exclude: [/node_modules/, /draco/],
@@ -87,7 +87,7 @@ if (process.env.NODE_ENV) {
     plugins: [
       threeMinifier,
       new MiniCssExtractPlugin(),
-      new HtmlWebpackPlugin({ template: './source/index.html' }),
+      new HtmlWebpackPlugin({ template: './source/template/index.pug' }),
       new BundleAnalyzerPlugin({
         analyzerMode: process.env.NODE_STATS || 'disabled'
       })
@@ -131,6 +131,10 @@ if (process.env.NODE_ENV) {
         {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader']
+        },
+        {
+          loader: 'pug-loader',
+          test: /\.pug$/i
         }
       ]
     },
@@ -167,7 +171,7 @@ if (process.env.NODE_ENV) {
         ]
       }),
       new MiniCssExtractPlugin(),
-      new HtmlWebpackPlugin({ template: './source/index.html' })
+      new HtmlWebpackPlugin({ template: './source/template/index.pug' })
     ],
     resolve: {
       alias: {
