@@ -2,6 +2,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const CopyPlugin = require('copy-webpack-plugin'),
   CssMinimizerPlugin = require('css-minimizer-webpack-plugin'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
+  LiveReloadPlugin = require('webpack-livereload-plugin'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin'),
   path = require('path')
 const { ESBuildMinifyPlugin } = require('esbuild-loader')
@@ -88,6 +89,7 @@ if (process.env.NODE_ENV) {
       threeMinifier,
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({ template: './source/template/index.pug' }),
+      new LiveReloadPlugin({ appendScriptTag: true }),
       new BundleAnalyzerPlugin({
         analyzerMode: process.env.NODE_STATS || 'disabled'
       })
@@ -171,7 +173,8 @@ if (process.env.NODE_ENV) {
         ]
       }),
       new MiniCssExtractPlugin(),
-      new HtmlWebpackPlugin({ template: './source/template/index.pug' })
+      new HtmlWebpackPlugin({ template: './source/template/index.pug' }),
+      new LiveReloadPlugin({ appendScriptTag: true })
     ],
     resolve: {
       alias: {
