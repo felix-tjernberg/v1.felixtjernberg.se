@@ -1,6 +1,6 @@
 header > svg {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   transform: rotate(180deg);
   height: min(15vh, 5rem);

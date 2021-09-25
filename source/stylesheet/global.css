@@ -23,7 +23,7 @@ section {
   place-content: center;
   position: relative;
 }
-body > header > * + *,
-section > * + * {
+body > header > * + *:not(svg),
+section > * + *:not(svg) {
   margin-top: 1em;
 }
