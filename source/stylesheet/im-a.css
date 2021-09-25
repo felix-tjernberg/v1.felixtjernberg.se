@@ -5,3 +5,13 @@
     var(--im-a-background-gradient-outer)
   );
 }
+
+.im-a > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  height: min(15vh, 5rem);
+  width: 100%;
+  fill: var(--im-a-background-gradient-outer);
+}
