@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 img,
 picture {
   display: block;
@@ -41,7 +46,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
 }
 
 html:focus-within {
