@@ -18,6 +18,7 @@ section {
   display: grid;
   place-content: center;
   min-height: min(100vh, 50rem);
+  padding-block: max(10vh, 3em);
 }
 body > header > * + *,
 section > * + * {
