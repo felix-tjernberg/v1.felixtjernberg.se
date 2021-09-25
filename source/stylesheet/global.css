@@ -8,9 +8,11 @@ h1,
 h2,
 h3 {
   font-family: 'Gloria Hallelujah', cursive;
+  padding-inline: 1em;
 }
 p {
   font-family: 'JetBrains Mono', monospace;
+  padding-inline: 1em;
 }
 
 body > header,
