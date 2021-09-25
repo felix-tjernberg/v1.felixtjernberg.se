@@ -1,8 +1,25 @@
 h1,
 h2,
+h3,
+p {
+  text-align: center;
+}
+h1,
+h2,
 h3 {
   font-family: 'Gloria Hallelujah', cursive;
 }
 p {
   font-family: 'JetBrains Mono', monospace;
+}
+
+body > header,
+section {
+  display: grid;
+  place-content: center;
+  min-height: min(100vh, 50rem);
+}
+body > header > * + *,
+section > * + * {
+  margin-top: 1em;
 }
