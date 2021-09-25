@@ -27,3 +27,12 @@ body > header > * + *:not(svg),
 section > * + *:not(svg) {
   margin-top: 1em;
 }
+
+.pointer-svg {
+  position: absolute;
+  left: 0;
+  transform: rotate(180deg);
+  height: min(15vh, 5rem);
+  width: 100%;
+  fill: var(--im-a-background-gradient-outer);
+}
