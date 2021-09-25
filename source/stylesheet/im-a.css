@@ -1,0 +1,7 @@
+.im-a {
+  background: radial-gradient(
+    circle,
+    var(--im-a-background-gradient-inner),
+    var(--im-a-background-gradient-outer)
+  );
+}

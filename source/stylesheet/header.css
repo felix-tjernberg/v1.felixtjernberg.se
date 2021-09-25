@@ -5,5 +5,5 @@ header > svg {
   transform: rotate(180deg);
   height: min(15vh, 5rem);
   width: 100%;
-  fill: red;
+  fill: var(--im-a-background-gradient-outer);
 }
