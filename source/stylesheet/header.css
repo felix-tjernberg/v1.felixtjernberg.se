@@ -2,3 +2,10 @@ header .pointer-svg {
   bottom: -1px;
   fill: var(--im-a-background-gradient-outer);
 }
+
+#header-background {
+  inset: 0;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
