@@ -1,6 +1,7 @@
 import 'Stylesheet/reset.css'
 import 'Stylesheet/test.css'
 import 'Stylesheet/global.css'
+import 'Stylesheet/header.css'
 
 // import(
 //   /* webpackChunkName: "landing-scene" */ 'Javascript/landing-scene/landing-scene.js'

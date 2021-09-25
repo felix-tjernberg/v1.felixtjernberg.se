@@ -18,9 +18,10 @@ p {
 body > header,
 section {
   display: grid;
-  place-content: center;
   min-height: min(100vh, 50rem);
-  padding-block: max(10vh, 3em);
+  padding-block: max(10vh, 3rem);
+  place-content: center;
+  position: relative;
 }
 body > header > * + *,
 section > * + * {
