@@ -5,6 +5,7 @@ import 'Stylesheet/global.css'
 import 'Stylesheet/header.css'
 import 'Stylesheet/im-a.css'
 import 'Stylesheet/fullstack-developer.css'
+import 'Stylesheet/football-coach.css'
 
 // import(
 //   /* webpackChunkName: "landing-scene" */ 'Javascript/landing-scene/landing-scene.js'

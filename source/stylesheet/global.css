@@ -19,7 +19,7 @@ body > header,
 section {
   display: grid;
   min-height: min(100vh, 50rem);
-  padding-block: max(10vh, 3rem);
+  padding-block: max(7.5%, 3rem);
   place-content: center;
   position: relative;
 }
@@ -28,15 +28,22 @@ section > * + *:not(svg) {
   margin-top: 1em;
 }
 
-.svg-transition-piece {
-  position: absolute;
-  left: 0;
-  height: 10%;
-  width: 100%;
-}
-
 .svg-background {
   inset: 0;
   position: absolute;
   z-index: -1;
+}
+
+.svg-transition-piece {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.pointer-transition {
+  height: 10%;
+}
+
+.wave-transition {
+  height: 5%;
 }
