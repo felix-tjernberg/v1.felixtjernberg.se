@@ -34,12 +34,6 @@ section > * + *:not(svg) {
   height: 10%;
   width: 100%;
 }
-/* #felix-tjernberg-header .svg-transition-piece > path,
-#im-a .svg-transition-piece > path,
-#fullstack-developer .svg-transition-piece > path,
-#football-coach .svg-transition-piece > path {
-  fill: var(--green-100);
-} */
 
 .svg-background {
   inset: 0;
