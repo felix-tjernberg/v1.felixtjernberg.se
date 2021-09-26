@@ -28,11 +28,18 @@ section > * + *:not(svg) {
   margin-top: 1em;
 }
 
-.pointer-svg {
+.pointer {
   position: absolute;
   left: 0;
-  transform: rotate(180deg);
-  height: min(15vh, 5rem);
+  height: 10%;
   width: 100%;
+}
+.pointer > path {
   fill: var(--im-a-background-gradient-outer);
+}
+
+.svg-background {
+  inset: 0;
+  position: absolute;
+  z-index: -1;
 }

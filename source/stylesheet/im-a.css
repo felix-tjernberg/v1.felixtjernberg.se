@@ -6,7 +6,6 @@
   );
 }
 
-.im-a .pointer-svg {
-  top: -1px;
-  fill: var(--im-a-background-gradient-outer);
+.im-a .pointer {
+  top: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
 }

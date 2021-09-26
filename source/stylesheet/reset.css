@@ -44,7 +44,6 @@ a:not([class]) {
 
 body {
   min-height: 100vh;
-  background-color: black;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
