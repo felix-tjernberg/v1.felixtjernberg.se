@@ -35,7 +35,7 @@ section > * + *:not(svg) {
   width: 100%;
 }
 .pointer > path {
-  fill: var(--im-a-background-gradient-outer);
+  fill: var(--green-100);
 }
 
 .svg-background {
