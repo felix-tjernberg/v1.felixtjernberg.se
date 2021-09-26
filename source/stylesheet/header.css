@@ -1,7 +1,7 @@
-#felix-tjernberg-header > .svg-background {
+#felix-tjernberg-header > #header-background {
   opacity: 0.7;
 }
 
-#felix-tjernberg-header > .svg-transition-piece {
+#felix-tjernberg-header > #pointer-top {
   bottom: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
 }
