@@ -2,6 +2,6 @@
   background: radial-gradient(circle, var(--green-300), var(--green-100));
 }
 
-.im-a .pointer {
+.im-a > .svg-transition-piece {
   top: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
 }

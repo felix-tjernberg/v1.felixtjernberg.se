@@ -1,0 +1,3 @@
+.football-coach > svg-transition-piece {
+  top: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
+}
