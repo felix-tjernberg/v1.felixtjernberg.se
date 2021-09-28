@@ -1,5 +1,4 @@
 import 'Stylesheet/reset.css'
-import 'Stylesheet/test.css'
 import 'Stylesheet/design-system-variables.css'
 import 'Stylesheet/global.css'
 import 'Stylesheet/utilities.css'
