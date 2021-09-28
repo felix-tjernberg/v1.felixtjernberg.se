@@ -1,0 +1,19 @@
+.absolute-container-centered-elements {
+  position: absolute;
+  inset: 0;
+}
+.absolute-container-centered-elements > * {
+  margin: auto;
+}
+
+.svg-background {
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.svg-transition-piece {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}

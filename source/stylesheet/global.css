@@ -27,23 +27,3 @@ body > header > * + *:not(svg),
 section > * + *:not(svg) {
   margin-top: 1em;
 }
-
-.svg-background {
-  inset: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-.svg-transition-piece {
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-
-.pointer-transition {
-  height: 10%;
-}
-
-.wave-transition {
-  height: 5%;
-}

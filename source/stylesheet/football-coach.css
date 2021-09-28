@@ -1,15 +1,25 @@
+#football-coach {
+  grid-template-rows: auto 1fr;
+  padding-block: max(7.5%, 3rem) 0;
+}
 #football-coach > #fullstack-transition-piece-bottom {
   top: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
 }
 
 #felix-coach-walk {
   position: relative;
-  background-color: red;
 }
-#felix-coach-walk img {
+
+#felix-coach-background {
   position: absolute;
-  top: 0;
   max-height: 100%;
+  object-fit: cover;
+  width: 100%;
+  z-index: -2;
 }
+
 #felix-as-coach {
+  position: relative;
+  max-height: 125%;
+  z-index: -1;
 }
