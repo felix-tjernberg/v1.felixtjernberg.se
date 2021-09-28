@@ -1,6 +1,6 @@
 #football-coach {
   grid-template-rows: auto 1fr;
-  padding-block: max(7.5%, 3rem) 0;
+  padding-block: var(--section-padding) 0;
 }
 #football-coach > #fullstack-transition-piece-bottom {
   top: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */

@@ -17,9 +17,11 @@ p {
 
 body > header,
 section {
+  --section-padding: max(7.5%, 3rem);
+
   display: grid;
   min-height: min(100vh, 50rem);
-  padding-block: max(7.5%, 3rem);
+  padding-block: var(--section-padding);
   place-content: center;
   position: relative;
 }
