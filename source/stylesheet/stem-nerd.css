@@ -1,0 +1,16 @@
+#learning-bro,
+#code-bro {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+  max-width: 40%;
+  z-index: -1;
+}
+#learning-bro {
+  max-height: 70%;
+  left: 0;
+}
+#code-bro {
+  max-height: 50%;
+  right: 0;
+}
