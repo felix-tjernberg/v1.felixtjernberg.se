@@ -1,13 +1,17 @@
 #football-coach {
   grid-template-rows: auto 1fr;
-  padding-block: var(--section-padding) 0;
 }
 #football-coach > #fullstack-transition-piece-bottom {
-  top: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
+  top: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
+}
+#football-coach > #stem-transition-staples-top {
+  bottom: -2px; /* Hack: issue where on some zoom levels there is a gap between svg's */
+  height: var(--section-padding);
 }
 
 #felix-coach-walk {
   position: relative;
+  height: 30em;
 }
 
 #felix-coach-background {
@@ -16,10 +20,14 @@
   object-fit: cover;
   width: 100%;
   z-index: -2;
+  inset: 0;
 }
 
 #felix-as-coach {
   position: relative;
-  max-height: 125%;
   z-index: -1;
+  height: 100%;
+}
+#football-coach > .absolute-container-centered-elements {
+  inset: 25% 0 0 0;
 }

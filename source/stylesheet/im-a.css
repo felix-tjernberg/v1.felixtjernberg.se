@@ -3,9 +3,9 @@
 }
 
 #im-a > #pointer-bottom {
-  top: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
+  top: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
 }
 
 #im-a > #fullstack-developer-transition-wave-bottom {
-  bottom: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
+  bottom: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
 }

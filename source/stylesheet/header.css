@@ -3,5 +3,5 @@
 }
 
 #felix-tjernberg-header > #pointer-top {
-  bottom: -1px; /* Hack: issue where on some zoom levels there is a 1px gap between pointer svg's */
+  bottom: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
 }
