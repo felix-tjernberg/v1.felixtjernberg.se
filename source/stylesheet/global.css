@@ -17,7 +17,7 @@ p {
 
 body > header,
 section {
-  --section-padding: max(7.5%, 3rem);
+  --section-padding: max(7.5%, 2rem);
 
   display: grid;
   min-height: min(100vh, 50rem);
