@@ -7,13 +7,16 @@ p {
 h1,
 h2,
 h3 {
+  --heading-font-size: clamp(2.5rem, 10vw, 5rem);
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: clamp(2.5rem, 10vw, 5rem);
+  font-size: var(--heading-font-size);
+  line-height: 1.2;
   padding-inline: 1em;
 }
 p {
+  --paragraf-font-size: clamp(1.25rem, 4vw, 2.25rem);
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(1.25rem, 4vw, 2.25rem);
+  font-size: var(--paragraf-font-size);
   padding-inline: 1em;
 }
 

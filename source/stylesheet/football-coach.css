@@ -8,6 +8,9 @@
 #football-coach > #stem-transition-staples-top {
   bottom: -2px; /* Hack: issue where on some zoom levels there is a gap between svg's */
 }
+#football-coach > h2 {
+  font-size: calc(var(--heading-font-size) * 0.8);
+}
 
 #felix-coach-walk {
   position: relative;
