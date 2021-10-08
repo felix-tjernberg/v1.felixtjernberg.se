@@ -1,11 +1,3 @@
 #im-a {
   background: radial-gradient(circle, var(--green-300), var(--green-100));
 }
-
-#im-a > #pointer-bottom {
-  top: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
-}
-
-#im-a > #fullstack-developer-transition-wave-bottom {
-  bottom: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
-}

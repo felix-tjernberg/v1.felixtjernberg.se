@@ -5,7 +5,3 @@
 #felix-tjernberg-header > #header-background {
   opacity: 0.7;
 }
-
-#felix-tjernberg-header > #pointer-top {
-  bottom: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
-}
