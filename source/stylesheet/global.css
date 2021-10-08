@@ -8,10 +8,12 @@ h1,
 h2,
 h3 {
   font-family: 'Gloria Hallelujah', cursive;
+  font-size: clamp(2.5rem, 10vw, 5rem);
   padding-inline: 1em;
 }
 p {
   font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(1.25rem, 4vw, 2.25rem);
   padding-inline: 1em;
 }
 
