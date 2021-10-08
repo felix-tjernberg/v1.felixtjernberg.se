@@ -1,6 +1,11 @@
 :root {
-  --green-100: #3ffb66;
-  --green-300: #13aa2b;
+  --im-a-100: #3ffb66;
+  --im-a-300: #13aa2b;
+  --header-100: #734f1e;
+  --header-200: #68471a;
+  --header-300: #5e3f16;
+  --header-400: #3d2709;
+  --header-500: #302007;
 }
 
 h1,

@@ -1,3 +1,3 @@
 #im-a {
-  background: radial-gradient(circle, var(--green-300), var(--green-100));
+  background: radial-gradient(circle, var(--im-a-300), var(--im-a-100));
 }
