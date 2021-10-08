@@ -6,6 +6,14 @@
   margin: auto;
 }
 
+.three-dimensional-text {
+  --face-color: inherit;
+  --side-color: #919191;
+  color: var(--face-color);
+  text-shadow: 0px 1px 0px var(--side-color), 0px 2px 0px var(--side-color),
+    0px 3px 0px var(--side-color), 0px 4px 0px var(--side-color);
+}
+
 .svg-background {
   inset: 0;
   position: absolute;
