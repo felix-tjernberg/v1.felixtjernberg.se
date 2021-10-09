@@ -1,6 +1,6 @@
 #stem-nerd {
   background: var(--stem-500);
-  background: linear-gradient(0deg, var(--stem-100), var(--stem-200));
+  background: linear-gradient(0deg, var(--stem-500), var(--stem-300));
   padding-bottom: calc(var(--section-padding) * 2);
 }
 

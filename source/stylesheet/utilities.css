@@ -7,7 +7,7 @@
 }
 
 .three-dimensional-text {
-  --face-color: inherit;
+  --face-color: white;
   --side-color: #919191;
   color: var(--face-color);
   text-shadow: 0px 1px 0px var(--side-color), 0px 2px 0px var(--side-color),

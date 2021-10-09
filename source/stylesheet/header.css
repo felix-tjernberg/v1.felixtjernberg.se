@@ -1,5 +1,4 @@
 #felix-tjernberg-header {
-  color: white;
   background: var(--header-100);
   background: radial-gradient(circle, var(--header-100), var(--header-400));
 }
