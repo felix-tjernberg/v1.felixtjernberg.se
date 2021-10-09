@@ -17,6 +17,7 @@ h3 {
 p {
   font-family: 'JetBrains Mono', monospace;
   font-size: var(--paragraf-font-size);
+  margin-top: 1em;
   padding-inline: 1em;
 }
 
