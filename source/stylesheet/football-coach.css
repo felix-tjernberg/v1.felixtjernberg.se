@@ -18,14 +18,14 @@
   max-height: 100%;
   object-fit: cover;
   width: 100%;
-  z-index: -2;
+  z-index: 1;
   top: 50%;
   transform: translateY(-50%);
 }
 
 #felix-as-coach {
   position: relative;
-  z-index: -1;
+  z-index: 2;
   height: 100%;
 }
 #football-coach > .absolute-container-centered-elements {
