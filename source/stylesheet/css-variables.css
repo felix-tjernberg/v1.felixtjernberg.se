@@ -4,42 +4,42 @@
   --header-300: #5e3f16;
   --header-400: #3d2709;
   --header-500: #302007;
+
   --im-a-100: #ffbab7;
   --im-a-200: #ff716a;
   --im-a-300: #ff291d;
   --im-a-400: #d00b00;
   --im-a-500: #840700;
+
   --fullstack-developer-100: #3ffb66;
   --fullstack-developer-300: #13aa2b;
   --fullstack-developer-500: #009400;
+
   --football-coach-100: #74beff;
   --football-coach-200: #279aff;
   --football-coach-300: #0074d9;
   --football-coach-400: #004b8d;
   --football-coach-500: #002241;
+
   --stem-100: #fff19a;
   --stem-200: #ffe74d;
   --stem-300: #ffdc00;
   --stem-400: #b39a00;
   --stem-500: #675800;
+
   --stuff-made-100: #9afff1;
   --stuff-made-200: #4dffe7;
   --stuff-made-300: #00ffdc;
   --stuff-made-400: #00b39a;
   --stuff-made-500: #006758;
+
   --closing-100: #ba91ff;
   --closing-200: #8a44ff;
   --closing-300: #5c00f6;
   --closing-400: #3f00aa;
   --closing-500: #23005e;
-}
 
-h1,
-h2,
-h3 {
   --heading-font-size: clamp(2.5rem, 10vw, 5rem);
-}
-p {
   --paragraf-font-size: clamp(1.25rem, 4vw, 2.25rem);
 }
 

@@ -7,14 +7,14 @@ p {
   z-index: 3;
 }
 h1,
-h2,
-h3 {
+h2 {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: var(--heading-font-size);
   line-height: 1.2;
   margin-bottom: 0.5em;
   padding-inline: 1em;
 }
+h3,
 p {
   font-family: 'JetBrains Mono', monospace;
   font-size: var(--paragraf-font-size);
