@@ -1,3 +1,9 @@
+#stem-nerd {
+  background: var(--stem-500);
+  background: linear-gradient(0deg, var(--stem-100), var(--stem-200));
+  padding-bottom: calc(var(--section-padding) * 2);
+}
+
 #learning-bro,
 #code-bro {
   position: absolute;
