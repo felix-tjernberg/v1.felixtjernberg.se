@@ -28,8 +28,3 @@ section {
   place-content: center;
   position: relative;
 }
-
-header * + *:not(svg),
-section * + *:not(svg) {
-  margin-top: 1em;
-}
