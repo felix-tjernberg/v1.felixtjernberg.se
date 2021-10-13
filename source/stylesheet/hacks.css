@@ -3,7 +3,7 @@
   top: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
 }
 #felix-tjernberg-header > #pointer-top,
-#im-a > #fullstack-developer-transition-wave-bottom,
+#im-a > #fullstack-developer-transition-wave-top,
 #football-coach > #stem-transition-staples-top {
   bottom: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
 }
