@@ -7,7 +7,6 @@
 
 .polaroid {
   background-color: white;
-  border-radius: 3px;
   box-shadow: 0 2rem 2rem -2rem black;
   max-width: 50ch;
   margin: 2rem;
@@ -35,6 +34,11 @@
   transform: rotate(40deg) translate(1.3rem, -1rem);
 }
 
+.polaroid,
+.polaroid > img {
+  border-radius: 3px;
+}
+
 .polaroid h3,
 .polaroid p {
   color: black;
@@ -46,4 +50,9 @@
 }
 .polaroid > p {
   font-size: calc(var(--paragraf-font-size) / 3);
+}
+.polaroid > img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
 }
