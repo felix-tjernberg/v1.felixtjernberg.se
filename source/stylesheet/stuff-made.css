@@ -1,8 +1,5 @@
-#polaroid-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  max-width: 1080px;
+#polaroid-gallery .auto-grid {
+  --auto-grid-min-size: 40ch;
 }
 
 .polaroid {
@@ -55,4 +52,27 @@
   aspect-ratio: 16/9;
   object-fit: cover;
   width: 100%;
+}
+
+@media (max-width: 400px) {
+  #polaroid-gallery .auto-grid {
+    --auto-grid-min-size: 30ch;
+  }
+}
+
+@media (max-width: 700px) {
+  #polaroid-gallery {
+    margin: auto;
+  }
+  .polaroid > h3,
+  .polaroid > p {
+    padding-inline: 1rem;
+  }
+  .polaroid > h3 {
+    text-decoration: underline;
+    font-size: var(--paragraf-font-size);
+  }
+  .polaroid > p {
+    font-size: calc(var(--paragraf-font-size) / 2);
+  }
 }

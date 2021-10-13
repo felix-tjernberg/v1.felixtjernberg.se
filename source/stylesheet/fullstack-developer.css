@@ -1,16 +1,21 @@
-#fullstack-developer .glass-background .glass-background {
-  padding: 1rem;
+.fullstack-link-section .glass-background {
+  padding: 0;
 }
 .fullstack-link-section {
-  align-content: center;
-  display: flex;
+  display: grid;
   place-content: center;
 }
+.fullstack-link-section .glass-background {
+  display: flex;
+  place-content: center;
+  padding-inline: 1rem;
+  flex-wrap: wrap;
+}
 .fullstack-link-section a {
+  margin: 1rem;
   text-decoration: none; /* On some browsers there is small point of underline rendered */
 }
 .fullstack-link-section svg {
-  margin-inline: 1rem;
-  max-height: 4rem;
-  max-width: 4rem;
+  height: 50px;
+  width: 50px;
 }
