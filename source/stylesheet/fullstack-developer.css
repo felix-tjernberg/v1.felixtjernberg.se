@@ -6,10 +6,12 @@
   place-content: center;
 }
 .fullstack-link-section .glass-background {
+  box-shadow: 0 1rem 2rem -1rem inset #00000099;
   display: flex;
+  flex-wrap: wrap;
+  filter: none;
   place-content: center;
   padding-inline: 1rem;
-  flex-wrap: wrap;
 }
 .fullstack-link-section a {
   margin: 1rem;
