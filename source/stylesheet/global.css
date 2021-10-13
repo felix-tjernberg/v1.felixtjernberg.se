@@ -30,10 +30,14 @@ p {
 }
 
 body > header,
-body > section {
+body > section,
+body > #end > section {
   display: grid;
   min-height: min(100vh, 50rem);
   padding-block: var(--section-padding);
   place-content: center;
   position: relative;
+}
+.glass-background > p:first-child {
+  margin-top: 0;
 }
