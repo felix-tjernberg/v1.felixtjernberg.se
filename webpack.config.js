@@ -57,7 +57,7 @@ if (process.env.NODE_ENV) {
         '...',
         new CopyPlugin({
           patterns: [
-            // { from: 'source/assets/image', to: './' },
+            { from: 'source/assets/image', to: './' },
             { from: 'source/javascript/draco/', to: './' }
           ]
         }),
