@@ -1,3 +1,10 @@
+#construction-message {
+  position: fixed;
+  opacity: 0.3;
+  background-color: orange;
+  border-radius: 0 50vh 50vh 0;
+}
+
 #stuff-made {
   background-color: var(--stuff-made-300);
 }
