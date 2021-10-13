@@ -1,13 +1,14 @@
 .fullstack-link-section {
   align-content: center;
   display: flex;
-  height: 100px;
   margin-block: 1rem;
   place-content: center;
 }
+.fullstack-link-section a {
+  text-decoration: none; /* On some browsers there is small point of underline rendered */
+}
 .fullstack-link-section svg {
-  border-radius: 25px;
   margin-inline: 1rem;
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 4rem;
+  max-width: 4rem;
 }
