@@ -16,6 +16,11 @@
   padding-block: var(--paragraf-font-size);
   z-index: 3;
 }
+@supports (backdrop-filter: blur(5px)) {
+  .glass-background {
+    filter: none;
+  }
+}
 
 .three-dimensional-text {
   --face-color: white;
