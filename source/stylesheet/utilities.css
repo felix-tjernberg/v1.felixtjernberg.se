@@ -28,7 +28,8 @@
   color: var(--face-color);
   text-shadow: 0px 1px 0px var(--side-color), 0px 2px 0px var(--side-color),
     0px 3px 0px var(--side-color), 0px 4px 0px var(--side-color),
-    0px 5px 0px var(--side-color), 0px 6px 0px var(--side-color);
+    0px 5px 0px var(--side-color), 0px 6px 0px var(--side-color),
+    0px 10px 20px #000;
 }
 
 .svg-background {
