@@ -6,16 +6,6 @@
   margin: auto;
 }
 
-.auto-grid {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--auto-grid-min-size), 1fr)
-  );
-  grid-gap: 1rem;
-}
-
 .glass-background {
   backdrop-filter: blur(5px);
   background-color: #46464657;

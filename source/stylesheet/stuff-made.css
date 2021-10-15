@@ -1,12 +1,12 @@
-#polaroid-gallery .auto-grid {
-  --auto-grid-min-size: 40ch;
+#polaroid-gallery {
+  display: flex;
+  flex-wrap: wrap;
 }
-
 .polaroid {
   background-color: white;
   box-shadow: 0 2rem 5rem -2rem black;
   max-width: 50ch;
-  margin: 2rem;
+  margin: 2rem auto;
   padding: 1rem;
   position: relative;
   text-decoration: none;
@@ -60,7 +60,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 928px) {
   #polaroid-gallery {
     margin: auto;
   }
