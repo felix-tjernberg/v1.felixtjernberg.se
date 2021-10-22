@@ -1,12 +1,13 @@
 #polaroid-gallery {
   display: flex;
   flex-wrap: wrap;
+  place-content: center;
 }
 .polaroid {
   background-color: white;
   box-shadow: 0 2rem 5rem -2rem black;
   max-width: 50ch;
-  margin: 2rem auto;
+  margin: 2rem;
   padding: 1rem;
   position: relative;
   text-decoration: none;
@@ -56,16 +57,7 @@
   width: 100%;
 }
 
-@media (max-width: 400px) {
-  #polaroid-gallery .auto-grid {
-    --auto-grid-min-size: 30ch;
-  }
-}
-
 @media (max-width: 928px) {
-  #polaroid-gallery {
-    margin: auto;
-  }
   .polaroid > h3,
   .polaroid > p {
     padding-inline: 1rem;
