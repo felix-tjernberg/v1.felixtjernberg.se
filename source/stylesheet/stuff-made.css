@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   place-content: center;
 }
+#polaroid-gallery a:hover {
+  --scale: 1.1;
+}
+
 .polaroid {
   background-color: white;
   box-shadow: 0 2rem 5rem -2rem black;
@@ -37,7 +41,6 @@
 .polaroid > img {
   border-radius: 5px;
 }
-
 .polaroid h3,
 .polaroid p {
   color: black;
