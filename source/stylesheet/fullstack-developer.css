@@ -8,6 +8,7 @@
 .fullstack-link-section .glass-background {
   box-shadow: 0 1rem 2rem -1rem inset #00000099;
   display: flex;
+  border-radius: 25px;
   flex-wrap: wrap;
   filter: none;
   place-content: center;
