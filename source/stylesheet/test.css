@@ -4,11 +4,3 @@
   background-color: orange;
   border-radius: 0 50vh 50vh 0;
 }
-
-#stuff-made {
-  background-color: var(--stuff-made-300);
-}
-
-#end {
-  background-color: var(--closing-100);
-}
