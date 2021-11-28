@@ -50,6 +50,7 @@ body > section {
   position: relative;
 }
 
+#felix-tjernberg-header a,
 #contact a,
 .polaroid > a {
   display: block;
