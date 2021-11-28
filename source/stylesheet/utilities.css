@@ -16,6 +16,9 @@
   padding-block: var(--paragraf-font-size);
   z-index: 3;
 }
+.glass-background > p:first-child {
+  margin-top: 0;
+}
 @supports (backdrop-filter: blur(5px)) {
   .glass-background {
     filter: none;

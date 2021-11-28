@@ -7,3 +7,7 @@
 #football-coach > #stem-transition-staples-top {
   bottom: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
 }
+
+.fullstack-link-section a {
+  text-decoration: none; /* On some browsers there is small point of underline rendered */
+}

@@ -15,10 +15,18 @@
   padding-inline: 1rem;
 }
 .fullstack-link-section a {
+  padding: 0;
   margin: 1rem;
-  text-decoration: none; /* On some browsers there is small point of underline rendered */
 }
 .fullstack-link-section svg {
   height: 50px;
   width: 50px;
+}
+
+.fullstack-link-section a {
+  transition: transform 0.2s;
+}
+.fullstack-link-section a:hover {
+  --scale: 1.3;
+  transform: scale(var(--scale));
 }
