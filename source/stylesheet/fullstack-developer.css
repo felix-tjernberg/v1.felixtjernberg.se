@@ -28,7 +28,7 @@
 }
 
 .fullstack-link-section a {
-  transition: transform 0.2s;
+  transition: transform 0.1s;
 }
 .fullstack-link-section a:hover {
   --scale: 1.3;
