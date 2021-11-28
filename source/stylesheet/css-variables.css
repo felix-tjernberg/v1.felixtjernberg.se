@@ -33,11 +33,11 @@
   --stuff-made-400: #00b39a;
   --stuff-made-500: #006758;
 
-  --closing-100: #ba91ff;
-  --closing-200: #8a44ff;
-  --closing-300: #5c00f6;
-  --closing-400: #3f00aa;
-  --closing-500: #23005e;
+  --contact-100: #ba91ff;
+  --contact-200: #8a44ff;
+  --contact-300: #5c00f6;
+  --contact-400: #3f00aa;
+  --contact-500: #23005e;
 
   --heading-font-size: clamp(2.5rem, 10vw, 5rem);
   --paragraf-font-size: clamp(1.25rem, 4vw, 2.25rem);
