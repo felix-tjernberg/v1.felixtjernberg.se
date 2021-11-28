@@ -17,7 +17,6 @@
   margin: 2rem;
   padding: 1rem;
   position: relative;
-  text-decoration: none;
 }
 .polaroid::before,
 .polaroid::after {
@@ -71,15 +70,17 @@
 }
 
 @media (max-width: 928px) {
+  .polaroid > a,
   .polaroid > h3,
-  .polaroid > p {
-    padding-inline: 1rem;
+  .polaroid p {
+    padding: 0 1rem;
   }
   .polaroid > h3 {
     text-decoration: underline;
     font-size: var(--paragraf-font-size);
   }
-  .polaroid > p {
+  .polaroid a,
+  .polaroid p {
     font-size: calc(var(--paragraf-font-size) / 2);
   }
 }
