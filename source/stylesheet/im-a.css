@@ -2,3 +2,9 @@
   background: var(--im-a-500);
   background: radial-gradient(circle, var(--im-a-500), var(--im-a-300));
 }
+#im-a a {
+  padding: 0 1em;
+}
+#im-a > .glass-background > a:first-child {
+  margin-top: 0;
+}
