@@ -1,7 +1,6 @@
 #football-coach {
   background-color: var(--football-coach-100);
   grid-template-rows: auto 1fr;
-  padding-block: calc(var(--section-padding) * 2);
 }
 #football-coach > h2 {
   font-size: calc(var(--heading-font-size) * 0.8);
@@ -31,4 +30,10 @@
 }
 #football-coach > .absolute-container-centered-elements {
   inset: 33% 0 0 0;
+}
+
+@media (max-width: 1000px) {
+  #football-coach {
+    padding-block: calc(var(--section-padding) * 2);
+  }
 }
