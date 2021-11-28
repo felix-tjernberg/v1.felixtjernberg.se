@@ -30,3 +30,8 @@
   --scale: 1.3;
   transform: scale(var(--scale));
 }
+@media (max-width: 625px) {
+  #fullstack-developer > .glass-background {
+    border-radius: 25px;
+  }
+}
