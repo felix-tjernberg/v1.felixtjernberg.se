@@ -56,3 +56,16 @@ body > section {
 .polaroid > a {
   display: block;
 }
+
+@media (max-width: 1100px) {
+  #football-coach,
+  #fullstack-developer {
+    padding-block: calc(var(--section-padding) * 2);
+  }
+}
+@media (min-width: 1101px) and (max-width: 1700px) {
+  #football-coach,
+  #fullstack-developer {
+    padding-block: calc(var(--section-padding) * 1.5);
+  }
+}

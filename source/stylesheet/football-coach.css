@@ -31,9 +31,3 @@
 #football-coach > .absolute-container-centered-elements {
   inset: 33% 0 0 0;
 }
-
-@media (max-width: 1000px) {
-  #football-coach {
-    padding-block: calc(var(--section-padding) * 2);
-  }
-}
