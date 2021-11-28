@@ -3,6 +3,7 @@
 }
 
 #polaroid-gallery {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   place-content: center;
