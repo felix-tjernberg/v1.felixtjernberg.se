@@ -1,13 +1,19 @@
-#im-a > #pointer-bottom,
-#football-coach > #fullstack-developer-transition-wave-bottom {
-  top: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
-}
-#felix-tjernberg-header > #pointer-top,
-#im-a > #fullstack-developer-transition-wave-top,
-#football-coach > #stem-transition-staples-top {
-  bottom: -1px; /* Hack: issue where on some zoom levels there is a gap between svg's */
+/* Hack: issue where on some zoom levels there is a gap between svg's */
+#fullstack-developer-transition-wave-bottom-bottom,
+#fullstack-developer-transition-wave-top-bottom,
+#pointer-bottom {
+  top: -1px;
 }
 
+/* Hack: issue where on some zoom levels there is a gap between svg's */
+#fullstack-developer-transition-wave-bottom-top,
+#fullstack-developer-transition-wave-top-top,
+#pointer-top,
+#stem-transition-staples-top {
+  bottom: -1px;
+}
+
+/* On some browsers there is small point of underline rendered */
 .fullstack-link-section a {
-  text-decoration: none; /* On some browsers there is small point of underline rendered */
+  text-decoration: none;
 }
