@@ -57,17 +57,10 @@ body > section {
   display: block;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   #football-coach,
   #fullstack-developer,
   #stuff-made {
-    padding-block: calc(var(--section-padding) * 3);
-  }
-}
-@media (min-width: 1101px) and (max-width: 1700px) {
-  #football-coach,
-  #fullstack-developer,
-  #stuff-made {
-    padding-block: calc(var(--section-padding) * 1.5);
+    padding-block: calc(var(--section-padding) * 2);
   }
 }

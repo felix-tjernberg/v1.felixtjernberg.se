@@ -41,20 +41,9 @@
 }
 
 .svg-transition-piece {
-  height: var(--section-padding);
+  height: calc(var(--section-padding) / 2);
   position: absolute;
   left: 0;
   width: 100%;
   z-index: 2;
-}
-
-@media (max-width: 358px) {
-  #fullstack-developer .svg-transition-piece {
-    height: var(--heading-font-size);
-  }
-}
-@media (min-width: 359px) and (max-width: 700px) {
-  #fullstack-developer .svg-transition-piece {
-    height: calc(var(--section-padding) / 2);
-  }
 }
