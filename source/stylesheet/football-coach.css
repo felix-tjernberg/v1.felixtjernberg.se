@@ -1,6 +1,5 @@
 #football-coach {
   background-color: var(--football-coach-100);
-  grid-template-rows: auto 1fr;
 }
 #football-coach > h2 {
   font-size: calc(var(--heading-font-size) * 0.8);
