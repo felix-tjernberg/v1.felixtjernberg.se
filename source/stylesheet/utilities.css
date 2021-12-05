@@ -41,7 +41,7 @@
 }
 
 .svg-transition-piece {
-  height: calc(var(--section-padding) / 2);
+  height: var(--heading-font-size);
   position: absolute;
   left: 0;
   width: 100%;
