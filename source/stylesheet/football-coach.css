@@ -7,7 +7,6 @@
 
 #felix-coach-walk {
   position: relative;
-  height: 30em;
   display: grid;
   place-content: center;
 }
