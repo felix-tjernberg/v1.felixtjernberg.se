@@ -40,27 +40,11 @@
   transform: rotate(40deg) translate(1.3rem, -1rem);
 }
 
-.polaroid a,
-.polaroid h3,
-.polaroid p {
-  color: black;
-}
-.polaroid a,
-.polaroid p {
-  font-size: calc(var(--paragraf-font-size) / 3);
-}
-.polaroid,
-.polaroid > img {
-  border-radius: 5px;
-}
 .polaroid > a {
-  margin-top: 2em;
+  margin-top: 3em;
 }
-.polaroid > header > p {
-  margin-top: 0.5em;
-}
-.polaroid > h3 {
-  font-size: calc(var(--paragraf-font-size) / 2);
+.polaroid h3 {
+  font-size: 1.7rem;
 }
 .polaroid > img {
   aspect-ratio: 16/9;
@@ -69,19 +53,22 @@
   position: relative;
   width: 100%;
 }
-
-@media (max-width: 928px) {
-  .polaroid > a,
-  .polaroid > h3,
-  .polaroid p {
-    padding: 0 1rem;
-  }
-  .polaroid > h3 {
-    text-decoration: underline;
-    font-size: var(--paragraf-font-size);
-  }
-  .polaroid a,
-  .polaroid p {
-    font-size: calc(var(--paragraf-font-size) / 2);
-  }
+.polaroid > p:first-of-type {
+  margin-top: 2em;
+}
+.polaroid > header > p {
+  margin-top: 0.5em;
+}
+.polaroid a,
+.polaroid h3,
+.polaroid p {
+  color: black;
+}
+.polaroid a,
+.polaroid p {
+  font-size: 1rem;
+}
+.polaroid,
+.polaroid > img {
+  border-radius: 5px;
 }
