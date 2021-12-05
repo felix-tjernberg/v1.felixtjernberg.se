@@ -1,7 +1,8 @@
 /* Hack: issue where on some zoom levels there is a gap between svg's */
 #fullstack-developer-transition-wave-bottom-bottom,
 #fullstack-developer-transition-wave-top-bottom,
-#pointer-bottom {
+#pointer-bottom,
+#stem-transition-staples-bottom-bottom {
   top: -1px;
 }
 
@@ -9,7 +10,8 @@
 #fullstack-developer-transition-wave-bottom-top,
 #fullstack-developer-transition-wave-top-top,
 #pointer-top,
-#stem-transition-staples-top {
+#stem-transition-staples-top,
+#stem-transition-staples-bottom-top {
   bottom: -1px;
 }
 
