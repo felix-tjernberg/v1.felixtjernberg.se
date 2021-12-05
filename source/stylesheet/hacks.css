@@ -15,7 +15,7 @@
   bottom: -1px;
 }
 
-/* On some browsers there is small point of underline rendered */
 .fullstack-link-section a {
-  text-decoration: none;
+  font-size: 0px; /* Removes unexplained height gain, height was 55px before this hack */
+  text-decoration: none; /* On some browsers there is small point of underline rendered */
 }
