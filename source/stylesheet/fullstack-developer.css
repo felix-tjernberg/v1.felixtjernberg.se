@@ -2,9 +2,6 @@
   font-size: calc(var(--paragraf-font-size) / 2);
 }
 
-.fullstack-link-section .glass-background {
-  padding: 0;
-}
 .fullstack-link-section {
   display: grid;
   place-content: center;
@@ -15,12 +12,11 @@
   border-radius: 25px;
   flex-wrap: wrap;
   filter: none;
+  padding: 0;
   place-content: center;
-  padding-inline: 1rem;
 }
 .fullstack-link-section a {
-  padding: 0;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 .fullstack-link-section svg {
   height: 50px;
