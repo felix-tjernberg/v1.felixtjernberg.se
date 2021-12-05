@@ -1,5 +1,6 @@
 #fullstack-developer-hint {
   font-size: calc(var(--paragraf-font-size) / 2);
+  margin-top: 2em;
 }
 
 .fullstack-link-section {
@@ -11,6 +12,7 @@
   display: flex;
   border-radius: 25px;
   flex-wrap: wrap;
+  margin: 16px var(--paragraf-font-size);
   filter: none;
   padding: 0.5rem 1.5rem;
   place-content: center;
