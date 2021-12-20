@@ -64,6 +64,10 @@ p,
   padding: 0 1em;
 }
 
+.pointer-transition {
+  height: 10%;
+}
+
 @media (max-width: 1200px) {
   #football-coach,
   #fullstack-developer,
