@@ -19,6 +19,7 @@
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
+  border-radius: 100% / 20%;
 }
 
 #felix-as-coach {
