@@ -1,13 +1,13 @@
-#stem-nerd {
-  background: var(--stem-500);
-  background: linear-gradient(0deg, var(--stem-500), var(--stem-300));
+#steam-nerd {
+  background: var(--steam-500);
+  background: linear-gradient(0deg, var(--steam-500), var(--steam-300));
   padding-bottom: calc(var(--section-padding) * 2);
 }
 
-#stem-transition-staples-bottom-top {
+#steam-transition-staples-bottom-top {
   height: calc(var(--heading-font-size) / 2);
 }
-#stem-transition-staples-bottom-bottom {
+#steam-transition-staples-bottom-bottom {
   height: calc(var(--heading-font-size) * 0.75);
 }
 
