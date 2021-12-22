@@ -8,10 +8,6 @@ const CopyPlugin = require('copy-webpack-plugin'),
 const { ESBuildMinifyPlugin } = require('esbuild-loader')
 
 if (process.env.NODE_ENV) {
-  // Production configuration
-  const ThreeMinifierPlugin = require('@yushijinhun/three-minifier-webpack')
-  const threeMinifier = new ThreeMinifierPlugin()
-
   module.exports = {
     devServer: {
       contentBase: path.join(__dirname, 'build')
@@ -28,10 +24,6 @@ if (process.env.NODE_ENV) {
           type: 'asset'
         },
         {
-          test: /\.glb|gltf$/,
-          use: [{ loader: 'file-loader', options: { esModule: false } }]
-        },
-        {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader']
         },
@@ -40,7 +32,7 @@ if (process.env.NODE_ENV) {
           test: /\.pug$/i
         },
         {
-          exclude: [/node_modules/, /draco/],
+          exclude: [/node_modules/],
           test: /\.js$/i,
           use: {
             loader: 'babel-loader',
@@ -56,10 +48,7 @@ if (process.env.NODE_ENV) {
       minimizer: [
         '...',
         new CopyPlugin({
-          patterns: [
-            { from: 'source/assets/image', to: './' },
-            { from: 'source/javascript/draco/', to: './' }
-          ]
+          patterns: [{ from: 'source/assets/image', to: './' }]
         }),
         new CssMinimizerPlugin({
           minify: CssMinimizerPlugin.cleanCssMinify,
@@ -86,7 +75,6 @@ if (process.env.NODE_ENV) {
       path: path.join(__dirname, 'build')
     },
     plugins: [
-      threeMinifier,
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({ template: './source/template/index.pug' }),
       new LiveReloadPlugin({ appendScriptTag: true }),
@@ -99,12 +87,9 @@ if (process.env.NODE_ENV) {
         Icon: path.resolve(__dirname, 'source/assets/icon'),
         Image: path.resolve(__dirname, 'source/assets/image'),
         Javascript: path.resolve(__dirname, 'source/javascript'),
-        Model: path.resolve(__dirname, 'source/assets/model'),
         Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
-        Svg: path.resolve(__dirname, 'source/assets/svg'),
-        Texture: path.resolve(__dirname, 'source/assets/texture')
-      },
-      plugins: [threeMinifier.resolver]
+        Svg: path.resolve(__dirname, 'source/assets/svg')
+      }
     },
     target: 'browserslist'
   }
@@ -125,10 +110,6 @@ if (process.env.NODE_ENV) {
         {
           test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
           type: 'asset'
-        },
-        {
-          test: /\.glb|gltf$/,
-          use: [{ loader: 'file-loader', options: { esModule: false } }]
         },
         {
           test: /\.css$/i,
@@ -167,10 +148,7 @@ if (process.env.NODE_ENV) {
     },
     plugins: [
       new CopyPlugin({
-        patterns: [
-          { from: 'source/assets/image', to: './' },
-          { from: 'source/javascript/draco/draco_decoder.wasm', to: './' }
-        ]
+        patterns: [{ from: 'source/assets/image', to: './' }]
       }),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({ template: './source/template/index.pug' }),
@@ -181,10 +159,8 @@ if (process.env.NODE_ENV) {
         Icon: path.resolve(__dirname, 'source/assets/icon'),
         Image: path.resolve(__dirname, 'source/assets/image'),
         Javascript: path.resolve(__dirname, 'source/javascript'),
-        Model: path.resolve(__dirname, 'source/assets/model'),
         Stylesheet: path.resolve(__dirname, 'source/stylesheet'),
-        Svg: path.resolve(__dirname, 'source/assets/svg'),
-        Texture: path.resolve(__dirname, 'source/assets/texture')
+        Svg: path.resolve(__dirname, 'source/assets/svg')
       }
     },
     stats: 'errors-warnings',
