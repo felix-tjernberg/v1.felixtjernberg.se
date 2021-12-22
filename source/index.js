@@ -11,3 +11,9 @@ import 'Stylesheet/stuff-made.css'
 import 'Stylesheet/contact.css'
 import 'Stylesheet/hacks.css'
 import 'Stylesheet/test.css'
+
+import toggleAllowProcessIntensive from 'Javascript/toggleAllowProcessIntensive.js'
+
+document.querySelector('#test1').addEventListener('click', () => {
+  toggleAllowProcessIntensive()
+})
