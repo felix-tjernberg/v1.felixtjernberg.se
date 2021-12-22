@@ -72,3 +72,22 @@
 .polaroid > img {
   border-radius: 5px;
 }
+
+#stuff-made .github-link,
+#stuff-made .youtube-link {
+  display: flex;
+  place-content: center;
+}
+.github-link:before {
+  background: url('../assets/svg/github.svg') no-repeat;
+}
+.youtube-link:before {
+  background: url('../assets/svg/youtube.svg') no-repeat;
+}
+.github-link:before,
+.youtube-link:before {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
