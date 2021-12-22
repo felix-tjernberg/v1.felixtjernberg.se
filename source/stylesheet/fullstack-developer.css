@@ -14,6 +14,7 @@
   flex-wrap: wrap;
   margin: 16px var(--paragraf-font-size);
   filter: none;
+  backdrop-filter: none;
   padding: 0.5rem 1.5rem;
   place-content: center;
 }
