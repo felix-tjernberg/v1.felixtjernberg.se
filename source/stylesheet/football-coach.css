@@ -26,7 +26,7 @@
   position: relative;
   z-index: 2;
   height: 100%;
-  animation: coach-walk 4s infinite;
+  animation: coach-walk 4.5s infinite;
   transition-timing-function: ease-in-out;
   transition-timing-function: cubic-bezier(1, 1, 0, 0);
 }
