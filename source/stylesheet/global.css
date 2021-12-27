@@ -47,6 +47,7 @@ body > section {
 }
 
 a {
+  display: inline-block;
   transition: transform 0.1s;
 }
 a:hover {
