@@ -26,7 +26,33 @@
   position: relative;
   z-index: 2;
   height: 100%;
+  animation: coach-walk 4s infinite;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(1, 1, 0, 0);
 }
 #football-coach > .absolute-container-centered-elements {
   inset: 33% 0 0 0;
+}
+
+@keyframes coach-walk {
+  0% {
+    left: -0.05%;
+    top: 0%;
+  }
+  25% {
+    left: 0%;
+    top: -1%;
+  }
+  50% {
+    left: 0.05%;
+    top: 0%;
+  }
+  75% {
+    left: 0%;
+    top: -1%;
+  }
+  100% {
+    left: -0.05%;
+    top: -0%;
+  }
 }
