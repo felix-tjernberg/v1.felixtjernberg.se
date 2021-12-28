@@ -4,11 +4,17 @@
 #football-coach > h2 {
   font-size: calc(var(--heading-font-size) * 0.8);
 }
+#football-coach > .absolute-container-centered-elements {
+  inset: 33% 0 0 0;
+}
 
-#felix-coach-walk {
+#felix-as-coach {
   position: relative;
-  display: grid;
-  place-content: center;
+  z-index: 2;
+  height: 100%;
+  animation: coach-walk 4.5s infinite;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(1, 1, 0, 0);
 }
 
 #felix-coach-background {
@@ -22,16 +28,39 @@
   border-radius: 100% / 20%;
 }
 
-#felix-as-coach {
+#felix-coach-walk {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr));
+  max-width: 715px;
+  place-content: center;
   position: relative;
-  z-index: 2;
-  height: 100%;
-  animation: coach-walk 4.5s infinite;
-  transition-timing-function: ease-in-out;
-  transition-timing-function: cubic-bezier(1, 1, 0, 0);
+  margin: 0 auto;
 }
-#football-coach > .absolute-container-centered-elements {
-  inset: 33% 0 0 0;
+#felix-coach-walk p {
+  font-size: 1rem;
+}
+#felix-coach-walk .glass-background {
+  --border-radius: 20% 45% / 50% 10%;
+  background-color: #464646e6;
+  padding-block: var(--paragraf-font-size);
+  border-radius: var(--border-radius);
+}
+.bigger-text {
+  font-size: 1.2em;
+  margin-block: 0.1em;
+}
+.perspective-text {
+  display: inline-block;
+  transform: skew(30deg, 3deg);
+}
+.clockwise-rotation {
+  display: inline-block;
+  transform: rotate(4deg);
+}
+.counter-clockwise-rotation {
+  display: inline-block;
+  transform: rotate(-7deg);
 }
 
 @keyframes coach-walk {
@@ -54,5 +83,11 @@
   100% {
     left: -0.05%;
     top: -0%;
+  }
+}
+
+@media (max-width: 480px) {
+  #felix-coach-walk .glass-background {
+    border-radius: 100% / 20%;
   }
 }
