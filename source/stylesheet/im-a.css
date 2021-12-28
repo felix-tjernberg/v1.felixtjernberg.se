@@ -8,3 +8,18 @@
 #im-a > .glass-background > a:first-child {
   margin-top: 0;
 }
+
+#im-a a:nth-child(1)::after,
+#im-a a:nth-child(1)::before {
+  content: ' 💻 ';
+}
+
+#im-a a:nth-child(2)::after,
+#im-a a:nth-child(2)::before {
+  content: ' 🏈 ';
+}
+
+#im-a a:nth-child(3)::after,
+#im-a a:nth-child(3)::before {
+  content: ' 🧬 ';
+}
