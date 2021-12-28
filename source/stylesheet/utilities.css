@@ -6,6 +6,20 @@
   margin: auto;
 }
 
+.bigger-text {
+  font-size: 1.2em;
+  margin-block: 0.1em;
+}
+
+.clockwise-rotated-text {
+  display: inline-block;
+  transform: rotate(4deg);
+}
+.counter-clockwise-rotated-text {
+  display: inline-block;
+  transform: rotate(-7deg);
+}
+
 .glass-background {
   background-color: #46464657;
   border-radius: 100% / 20%;
@@ -27,14 +41,13 @@
   }
 }
 
-.three-dimensional-text {
-  --face-color: white;
-  --side-color: #919191;
-  color: var(--face-color);
-  text-shadow: 0px 1px 0px var(--side-color), 0px 2px 0px var(--side-color),
-    0px 3px 0px var(--side-color), 0px 4px 0px var(--side-color),
-    0px 5px 0px var(--side-color), 0px 6px 0px var(--side-color),
-    0px 10px 20px #000;
+.perspective-text {
+  display: inline-block;
+  transform: skew(30deg, 3deg);
+}
+
+.smaller-text {
+  font-size: 0.6em;
 }
 
 .svg-background {
@@ -48,4 +61,14 @@
   left: 0;
   width: 100%;
   z-index: 2;
+}
+
+.three-dimensional-text {
+  --face-color: white;
+  --side-color: #919191;
+  color: var(--face-color);
+  text-shadow: 0px 1px 0px var(--side-color), 0px 2px 0px var(--side-color),
+    0px 3px 0px var(--side-color), 0px 4px 0px var(--side-color),
+    0px 5px 0px var(--side-color), 0px 6px 0px var(--side-color),
+    0px 10px 20px #000;
 }
