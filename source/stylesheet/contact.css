@@ -6,3 +6,7 @@
   font-size: calc(var(--paragraf-font-size) * 0.6);
   margin-top: 3rem;
 }
+
+#contact .bigger-text {
+  text-shadow: 0px 3px 7px #000000a0;
+}
