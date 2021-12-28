@@ -18,6 +18,10 @@
   margin: 2rem;
   padding: 1rem;
   position: relative;
+  transform: var(--polaroid-transform);
+  --left-tape-transform: rotate(-30deg) translate(-1.3rem, -0.75rem);
+  --right-tape-transform: rotate(40deg) translate(1.3rem, -1rem);
+  right: 0;
 }
 .polaroid::before,
 .polaroid::after {
@@ -33,11 +37,11 @@
 }
 .polaroid::before {
   left: 0;
-  transform: rotate(-30deg) translate(-1.3rem, -0.75rem);
+  transform: var(--left-tape-transform);
 }
 .polaroid::after {
   right: 0;
-  transform: rotate(40deg) translate(1.3rem, -1rem);
+  transform: var(--right-tape-transform);
 }
 
 .polaroid > a {
