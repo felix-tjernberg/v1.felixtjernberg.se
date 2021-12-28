@@ -43,7 +43,7 @@
 
 .perspective-text {
   display: inline-block;
-  transform: skew(30deg, 3deg);
+  transform: skew(15deg) rotate3d(10, 0, -1, 30deg);
 }
 
 .smaller-text {
