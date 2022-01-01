@@ -32,3 +32,9 @@
     border-radius: 25px;
   }
 }
+
+@media (min-width: 1500px) {
+  #fullstack-background {
+    width: 100%;
+  }
+}
