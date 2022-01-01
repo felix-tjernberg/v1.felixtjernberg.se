@@ -65,6 +65,12 @@ p,
   padding: 0 1em;
 }
 
+#im-a h2,
+#fullstack-developer h2,
+#steam-nerd h2 {
+  margin-bottom: 0;
+}
+
 .pointer-transition {
   height: 10%;
 }
