@@ -38,13 +38,31 @@
 }
 #american-football-bro,
 #innovation-bro {
-  bottom: 0;
+  bottom: 10%;
 }
 #american-football-bro {
-  right: 0;
+  right: 10px;
+}
+#innovation-bro {
+  left: 10px;
 }
 #typing-bro {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -70%);
+}
+
+@media (max-width: 680px) {
+  #im-a {
+    min-height: min(50vh, 50rem);
+  }
+}
+
+@media (min-width: 1500px) {
+  #american-football-bro {
+    right: 10%;
+  }
+  #innovation-bro {
+    left: 10%;
+  }
 }
