@@ -9,6 +9,7 @@ import 'Stylesheet/football-coach.css'
 import 'Stylesheet/steam-nerd.css'
 import 'Stylesheet/stuff-made.css'
 import 'Stylesheet/contact.css'
+import 'Stylesheet/footer.css'
 import 'Stylesheet/hacks.css'
 import 'Stylesheet/test.css'
 

@@ -1,0 +1,13 @@
+#footer {
+  margin-top: var(--heading-font-size);
+}
+#footer h2 {
+  font-size: 1.5rem;
+}
+#footer a {
+  display: block;
+  font-size: 1rem;
+}
+#footer a:last-of-type {
+  margin-top: 4em;
+}
