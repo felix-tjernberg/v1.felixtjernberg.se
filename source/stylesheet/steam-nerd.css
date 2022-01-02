@@ -26,3 +26,9 @@
   max-height: 50%;
   right: 1%;
 }
+
+@media (max-width: 680px) {
+  #steam-nerd {
+    min-height: min(50vh, 50rem);
+  }
+}
