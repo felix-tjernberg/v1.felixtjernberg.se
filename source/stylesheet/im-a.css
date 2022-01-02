@@ -9,6 +9,10 @@
   margin-top: 0;
 }
 
+#im-a .glass-background {
+  background-color: #464646e6;
+}
+
 #im-a a:nth-child(1)::after,
 #im-a a:nth-child(1)::before {
   content: ' 💻 ';
@@ -22,4 +26,25 @@
 #im-a a:nth-child(3)::after,
 #im-a a:nth-child(3)::before {
   content: ' 🧬 ';
+}
+
+#american-football-bro,
+#innovation-bro,
+#typing-bro {
+  position: absolute;
+  max-height: 50%;
+  max-width: 40%;
+  opacity: 0.5;
+}
+#american-football-bro,
+#innovation-bro {
+  bottom: 0;
+}
+#american-football-bro {
+  right: 0;
+}
+#typing-bro {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
 }
