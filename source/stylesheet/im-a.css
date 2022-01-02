@@ -4,9 +4,10 @@
 }
 #im-a a {
   padding: 0 1em;
+  text-decoration: none;
 }
-#im-a > .glass-background > a:first-child {
-  margin-top: 0;
+#im-a a > span {
+  text-decoration: underline;
 }
 
 #im-a .glass-background {
