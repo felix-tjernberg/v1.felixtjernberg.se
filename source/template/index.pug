@@ -9,41 +9,42 @@ html(lang='en')
     include ./header-links.pug
   body
     include ./test/construction-message.pug
+    a(id='navigation-skip' href='#felix-tjernberg-header') Skip navigation
+    main
+      header(id='felix-tjernberg-header')
+        include ./header.pug
+        //- Transition svg
+        include ../assets/svg/im-a/pointer-top-part.svg
 
-    header(id='felix-tjernberg-header')
-      include ./header.pug
-      //- Transition svg
-      include ../assets/svg/im-a/pointer-top-part.svg
+      section(id='im-a')
+        include ./im-a.pug
+        //- Transition svgs
+        include ../assets/svg/im-a/pointer-bottom-part.svg
+        include ../assets/svg/fullstack-developer/transition-wave-top-top.svg
 
-    section(id='im-a')
-      include ./im-a.pug
-      //- Transition svgs
-      include ../assets/svg/im-a/pointer-bottom-part.svg
-      include ../assets/svg/fullstack-developer/transition-wave-top-top.svg
+      section(id='fullstack-developer')
+        include ./fullstack-developer.pug
+        //- Transition svgs
+        include ../assets/svg/fullstack-developer/transition-wave-top-bottom.svg
+        include ../assets/svg/fullstack-developer/transition-wave-bottom-top.svg
 
-    section(id='fullstack-developer')
-      include ./fullstack-developer.pug
-      //- Transition svgs
-      include ../assets/svg/fullstack-developer/transition-wave-top-bottom.svg
-      include ../assets/svg/fullstack-developer/transition-wave-bottom-top.svg
+      section(id='football-coach')
+        include ./football-coach.pug
+        //- Transition svgs
+        include ../assets/svg/fullstack-developer/transition-wave-bottom-bottom.svg
+        include ../assets/svg/steam-nerd/transition-staples-top.svg
 
-    section(id='football-coach')
-      include ./football-coach.pug
-      //- Transition svgs
-      include ../assets/svg/fullstack-developer/transition-wave-bottom-bottom.svg
-      include ../assets/svg/steam-nerd/transition-staples-top.svg
+      section(id='steam-nerd')
+        include ./steam-nerd.pug
+        //- Transition svg
+        include ../assets/svg/steam-nerd/transition-staples-bottom-top.svg
 
-    section(id='steam-nerd')
-      include ./steam-nerd.pug
-      //- Transition svg
-      include ../assets/svg/steam-nerd/transition-staples-bottom-top.svg
+      section(id='stuff-made')
+        include ./stuff-made.pug
+        //- Transition svg
+        include ../assets/svg/steam-nerd/transition-staples-bottom-bottom.svg
 
-    section(id='stuff-made')
-      include ./stuff-made.pug
-      //- Transition svg
-      include ../assets/svg/steam-nerd/transition-staples-bottom-bottom.svg
-
-    section(id='contact')
-      include ./contact.pug
-      div(id='footer')
-        include ./footer.pug
+      section(id='contact')
+        include ./contact.pug
+        div(id='footer')
+          include ./footer.pug

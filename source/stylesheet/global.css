@@ -37,8 +37,8 @@ p {
   max-width: 50ch;
 }
 
-body > header,
-body > section {
+body > main > header,
+body > main > section {
   display: grid;
   min-height: min(100vh, 50rem);
   padding-block: var(--section-padding);
