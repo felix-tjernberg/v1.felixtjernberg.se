@@ -48,7 +48,10 @@ if (process.env.NODE_ENV) {
       minimizer: [
         '...',
         new CopyPlugin({
-          patterns: [{ from: 'source/assets/image', to: './' }]
+          patterns: [
+            { from: 'source/assets/image/football-coach' },
+            { from: 'source/assets/image/stuff-made' }
+          ]
         }),
         new CssMinimizerPlugin({
           minify: CssMinimizerPlugin.cleanCssMinify,
@@ -148,7 +151,10 @@ if (process.env.NODE_ENV) {
     },
     plugins: [
       new CopyPlugin({
-        patterns: [{ from: 'source/assets/image', to: './' }]
+        patterns: [
+          { from: 'source/assets/image/football-coach' },
+          { from: 'source/assets/image/stuff-made' }
+        ]
       }),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({ template: './source/template/index.pug' }),
