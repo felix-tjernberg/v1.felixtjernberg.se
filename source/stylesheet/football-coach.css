@@ -23,8 +23,6 @@
   object-fit: cover;
   width: 100%;
   z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
   border-radius: 100% / 20%;
 }
 
@@ -81,5 +79,8 @@
   }
   #felix-coach-walk .glass-background {
     background-color: #3b3b3bb4;
+  }
+  #felix-coach-background {
+    width: 75%;
   }
 }
