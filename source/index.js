@@ -14,7 +14,14 @@ import 'Stylesheet/hacks.css'
 import 'Stylesheet/test.css'
 
 import toggleAllowProcessIntensive from 'Javascript/toggleAllowProcessIntensive.js'
+import toggleLineClamp from 'Javascript/toggleLineClamp.js'
 
 document.querySelector('#test1').addEventListener('click', () => {
   toggleAllowProcessIntensive()
+})
+
+document.querySelectorAll('.line-clamp-button').forEach((element) => {
+  return element.addEventListener('click', ({ target }) => {
+    toggleLineClamp(target)
+  })
 })

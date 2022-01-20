@@ -3,7 +3,7 @@
 }
 
 #polaroid-gallery {
-  align-items: center;
+  align-items: start;
   display: flex;
   flex-wrap: wrap;
   place-content: center;
@@ -97,4 +97,31 @@
   display: inline-block;
   height: 1em;
   width: 1em;
+}
+
+.line-clamp {
+  margin-top: 2em;
+}
+.line-clamp a,
+.line-clamp p {
+  margin-top: 0;
+}
+.line-clamp-button {
+  display: none;
+}
+
+@supports (-webkit-line-clamp: 2) {
+  .line-clamp {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .line-clamp[data-expanded] {
+    -webkit-line-clamp: initial;
+  }
+
+  .line-clamp-button {
+    display: block;
+  }
 }
