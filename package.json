@@ -31,7 +31,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "dat.gui": "^0.7.7",
     "esbuild-loader": "^2.15.0",
     "file-loader": "^6.2.0",
     "pug-loader": "^2.4.0",
