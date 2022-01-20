@@ -48,7 +48,7 @@ body {
   text-rendering: optimizeSpeed;
 }
 
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
@@ -59,7 +59,7 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
+  html {
     scroll-behavior: auto;
   }
 
