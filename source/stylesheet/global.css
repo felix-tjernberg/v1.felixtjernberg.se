@@ -1,19 +1,13 @@
-h1,
-h2,
-h3,
-p,
-a {
-  z-index: 3;
-}
-
 a,
 h1,
 h2,
 h3,
 p {
-  color: #f4f4f4;
   text-align: center;
+  color: #f4f4f4;
+  z-index: 3;
 }
+
 h1,
 h2 {
   font-family: 'Gloria Hallelujah', cursive;
