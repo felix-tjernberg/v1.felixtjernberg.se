@@ -1,14 +1,28 @@
-nav {
+nav ol,
+#navigation-button {
   position: fixed;
-  width: 100%;
   z-index: 4;
+}
+
+nav ol {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.603);
+  display: none;
+  flex-direction: column;
+  inset: 0;
+  margin: auto;
+  overflow-y: scroll;
+  place-content: center;
+}
+nav ol[data-show-navigation] {
+  display: flex;
 }
 nav a {
   font-size: 1em;
-  margin-top: 0;
-  padding: 1em 2em;
+  padding: 1em;
 }
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
+
+#navigation-button {
+  top: 1em;
+  right: 1em;
 }
