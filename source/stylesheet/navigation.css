@@ -26,3 +26,16 @@ nav a {
   top: 1em;
   right: 1em;
 }
+
+@media (min-width: 1000px) {
+  nav ol {
+    overflow: initial;
+    background-color: transparent;
+    flex-direction: row;
+    inset: 0 0 auto 0;
+  }
+  #navigation-button {
+    top: 0;
+    right: 0;
+  }
+}
