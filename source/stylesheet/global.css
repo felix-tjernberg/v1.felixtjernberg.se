@@ -64,6 +64,11 @@ p,
 #steam-nerd h2 {
   margin-bottom: 0;
 }
+#contact h2,
+#fullstack-developer h2,
+#stuff-made h2 {
+  margin-top: 1em;
+}
 
 @media (max-width: 1000px) {
   #im-a,
