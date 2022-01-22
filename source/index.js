@@ -35,7 +35,7 @@ document.querySelectorAll('.line-clamp-button').forEach((element) => {
 })
 
 window.onload = () => {
-  if (document.body.clientWidth > 999) {
+  if (window.innerHeight > 500 && window.innerWidth > 999) {
     document.querySelector('#navigation-button').click()
   }
 }
