@@ -1,12 +1,18 @@
 .navigation-skip {
   display: block;
   position: absolute;
-  transform: scale(0%);
-  transition: transform 325ms ease-in;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(0%);
+  transition: transform 325ms cubic-bezier(0.37, 0.02, 0.79, 1.26);
   z-index: 10;
 }
 .navigation-skip:focus {
-  transform: scale(100%);
+  transform: translate(-50%, 50%) scale(100%);
+}
+.navigation-skip.glass-background {
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 0.5em;
+  margin: 0;
 }
 
 nav ol,
