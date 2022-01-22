@@ -10,20 +10,21 @@
 }
 
 .polaroid {
+  --left-tape-length: 88px;
+  --left-tape-transform: rotate(-30deg) translate(-20px, -10px);
+  --right-tape-length: 88px;
+  --right-tape-transform: rotate(40deg) translate(20px, -10px);
+
   background-color: white;
-  box-shadow: 0 2rem 5rem -2rem black;
+  box-shadow: 0 32px 80px -32px black;
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
   max-width: 50ch;
-  margin: 2rem;
-  padding: 1rem;
+  margin: 2em;
+  padding: 1em;
   position: relative;
   transform: var(--polaroid-transform);
-  --left-tape-transform: rotate(-30deg) translate(-1.3rem, -0.75rem);
-  --left-tape-length: 5.5rem;
-  --right-tape-transform: rotate(40deg) translate(1.3rem, -1rem);
-  right: 0;
-  --right-tape-length: 5.5rem;
 }
 .polaroid::before,
 .polaroid::after {
@@ -31,7 +32,7 @@
   border-radius: 2px;
   background-color: hsla(0, 0%, 100%, 0.5);
   filter: drop-shadow(0 1px 1px hsla(0, 0%, 19%, 0.2));
-  height: 1.5rem;
+  height: 24px;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -51,7 +52,7 @@
   margin-top: 3em;
 }
 .polaroid h3 {
-  font-size: 1.7rem;
+  font-size: 1.5em;
 }
 .polaroid > img {
   aspect-ratio: 16/9;
@@ -70,10 +71,6 @@
 .polaroid h3,
 .polaroid p {
   color: black;
-}
-.polaroid a,
-.polaroid p {
-  font-size: 1rem;
 }
 .polaroid,
 .polaroid > img {

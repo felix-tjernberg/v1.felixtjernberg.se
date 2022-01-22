@@ -3,8 +3,8 @@
 }
 
 #contact > a {
-  font-size: calc(var(--paragraf-font-size) * 0.6);
-  margin-top: 3rem;
+  font-size: 0.6em;
+  margin-top: 3em;
 }
 
 #contact .bigger-text {

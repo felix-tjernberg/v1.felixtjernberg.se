@@ -1,15 +1,13 @@
 #footer {
   align-items: center;
   display: flex;
+  font-size: 1rem;
   flex-direction: column;
   place-content: center;
   margin-top: var(--heading-font-size);
 }
 #footer h2 {
-  font-size: 1.5rem;
-}
-#footer a {
-  font-size: 1rem;
+  font-size: 2em;
 }
 #footer a:last-of-type {
   margin-top: 4em;

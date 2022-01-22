@@ -42,8 +42,8 @@ nav ol[data-show-navigation] {
   transform: scale(100%);
 }
 nav a {
-  font-size: 1em;
-  padding: 1em;
+  font-size: 1.5rem;
+  padding: 1.5rem;
 }
 
 #navigation-button {
@@ -52,6 +52,10 @@ nav a {
 }
 
 @media (min-width: 1000px) {
+  nav a {
+    font-size: 1rem;
+    padding: 1rem;
+  }
   nav ol {
     overflow: initial;
     background: none;
@@ -64,7 +68,7 @@ nav a {
   }
 }
 
-@media (max-height: 500px) and (max-width: 999px) {
+@media (max-height: 750px) and (max-width: 999px) {
   nav ol {
     place-content: start;
   }

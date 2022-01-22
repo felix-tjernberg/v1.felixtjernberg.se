@@ -74,13 +74,15 @@
   }
 }
 @media (min-width: 1100px) {
+  #felix-coach-background {
+    width: 75%;
+  }
+}
+@media (min-width: 1262px) {
   #felix-coach-walk {
     gap: 0 20%;
   }
   #felix-coach-walk .glass-background {
     background-color: #3b3b3bb4;
-  }
-  #felix-coach-background {
-    width: 75%;
   }
 }

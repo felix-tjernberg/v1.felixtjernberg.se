@@ -46,5 +46,5 @@
 main > header,
 main > section,
 .svg-transition-piece {
-  --section-padding: max(7.5%, 2rem);
+  --section-padding: 2em;
 }
