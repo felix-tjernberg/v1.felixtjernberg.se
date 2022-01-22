@@ -64,7 +64,7 @@ nav a {
   }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 500px) and (max-width: 999px) {
   nav ol {
     place-content: start;
   }
