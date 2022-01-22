@@ -109,6 +109,9 @@
 .line-clamp-button {
   display: none;
 }
+.line-clamp-button span {
+  pointer-events: none;
+}
 
 @supports (-webkit-line-clamp: 2) {
   .line-clamp {
@@ -122,6 +125,12 @@
   }
 
   .line-clamp-button {
-    display: block;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .line-clamp[data-expanded] + button .pointer-icon {
+    order: -1;
+    transform: rotate(180deg);
   }
 }
