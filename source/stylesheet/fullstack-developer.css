@@ -1,5 +1,8 @@
 #fullstack-developer > .glass-background:first-of-type {
-  padding: 0.75em 2em 2em 1em;
+  padding: 0.3em 2em 1em 2em;
+}
+#fullstack-developer > .glass-background:first-of-type a {
+  margin-top: 0;
 }
 
 #fullstack-developer-hint {
