@@ -63,3 +63,9 @@ nav a {
     right: 0;
   }
 }
+
+@media (max-height: 500px) {
+  nav ol {
+    place-content: start;
+  }
+}
