@@ -31,8 +31,8 @@ p {
   max-width: 50ch;
 }
 
-body > main > header,
-body > main > section {
+main > header,
+main > section {
   display: grid;
   min-height: min(100vh, 50rem);
   padding-block: var(--section-padding);
@@ -63,10 +63,6 @@ p,
 #fullstack-developer h2,
 #steam-nerd h2 {
   margin-bottom: 0;
-}
-
-.pointer-transition {
-  height: 10%;
 }
 
 @media (max-width: 1200px) {

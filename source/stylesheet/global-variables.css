@@ -43,7 +43,8 @@
   --paragraf-font-size: clamp(1.25rem, 4vw, 2.25rem);
 }
 
-body > header,
-section {
+main > header,
+main > section,
+.svg-transition-piece {
   --section-padding: max(7.5%, 2rem);
 }
