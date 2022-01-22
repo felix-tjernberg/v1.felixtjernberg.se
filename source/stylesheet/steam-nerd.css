@@ -1,11 +1,11 @@
 #steam-nerd {
   background: var(--steam-500);
   background: linear-gradient(0deg, var(--steam-500), var(--steam-300));
-  padding-bottom: calc(var(--section-padding) * 2);
+  padding-bottom: calc(var(--section-padding-block) * 2);
 }
 
 #steam-transition-staples-bottom-top {
-  height: calc(--section-padding / 2);
+  height: calc(--section-padding-block / 2);
 }
 
 #learning-bro,

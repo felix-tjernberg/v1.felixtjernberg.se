@@ -56,7 +56,7 @@
 }
 
 .svg-transition-piece {
-  height: var(--section-padding);
+  height: var(--section-padding-block);
   position: absolute;
   left: 0;
   width: 100%;

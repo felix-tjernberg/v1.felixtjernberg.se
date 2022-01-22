@@ -46,5 +46,5 @@
 main > header,
 main > section,
 .svg-transition-piece {
-  --section-padding: 2em;
+  --section-padding-block: 2em;
 }
