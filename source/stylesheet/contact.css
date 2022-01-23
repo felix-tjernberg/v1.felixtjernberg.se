@@ -1,10 +1,8 @@
 #contact {
   background-color: var(--contact-100);
 }
-
-#contact > a {
-  font-size: 0.6em;
-  margin-top: 3em;
+#contact .glass-background a {
+  margin-top: 0;
 }
 
 #contact .bigger-text {

@@ -42,6 +42,13 @@
   border-radius: var(--border-radius);
 }
 
+#football-first-paragraf .bigger-text {
+  text-shadow: 0px 3px 7px #000000a0;
+}
+#football-last-paragraf .bigger-text {
+  font-size: 1.6em;
+}
+
 .absolute-container-centered-elements {
   position: absolute;
   inset: 33% 0 0 0;
