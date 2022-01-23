@@ -1,7 +1,7 @@
 import 'Stylesheet/reset.css'
 import 'Stylesheet/global-variables.css'
 import 'Stylesheet/global.css'
-import 'Stylesheet/utilities.css'
+import 'Stylesheet/shared-classes.css'
 import 'Stylesheet/navigation.css'
 import 'Stylesheet/header.css'
 import 'Stylesheet/im-a.css'

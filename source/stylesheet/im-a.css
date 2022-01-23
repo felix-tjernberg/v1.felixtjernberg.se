@@ -2,9 +2,11 @@
   background: var(--im-a-500);
   background: radial-gradient(circle, var(--im-a-500), var(--im-a-300));
 }
+#im-a a {
+  text-decoration: none;
+}
 #im-a a:not(:first-of-type) {
   margin-top: 2em;
-  text-decoration: none;
 }
 #im-a a > span {
   text-decoration: underline;

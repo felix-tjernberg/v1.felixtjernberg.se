@@ -4,9 +4,6 @@
 #football-coach > h2 {
   font-size: calc(var(--heading-font-size) * 0.8);
 }
-#football-coach > .absolute-container-centered-elements {
-  inset: 33% 0 0 0;
-}
 
 #felix-as-coach {
   position: relative;
@@ -43,6 +40,27 @@
   background-color: #464646e6;
   padding-block: var(--paragraf-font-size);
   border-radius: var(--border-radius);
+}
+
+.absolute-container-centered-elements {
+  position: absolute;
+  inset: 33% 0 0 0;
+}
+.absolute-container-centered-elements > * {
+  margin: auto;
+}
+
+.clockwise-rotated-text {
+  display: inline-block;
+  transform: rotate(4deg);
+}
+.counter-clockwise-rotated-text {
+  display: inline-block;
+  transform: rotate(-7deg);
+}
+.perspective-text {
+  display: inline-block;
+  transform: skew(15deg) rotate3d(10, 0, -1, 30deg);
 }
 
 @keyframes coach-walk {
