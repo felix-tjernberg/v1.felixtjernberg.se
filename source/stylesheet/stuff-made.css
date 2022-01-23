@@ -103,6 +103,7 @@
   }
 
   .line-clamp-button {
+    align-items: center;
     display: flex;
     flex-direction: column;
   }
