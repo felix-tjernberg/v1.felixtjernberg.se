@@ -6,7 +6,7 @@
 .glass-background {
   background-color: #46464657;
   border-radius: 100% / 20%;
-  box-shadow: 0 2rem 5rem -2rem black;
+  box-shadow: 0 32px 80px -32px black;
   margin: var(--paragraf-font-size);
   padding: 2em 1em;
   z-index: 3;
