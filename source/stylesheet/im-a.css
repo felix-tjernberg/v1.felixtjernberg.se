@@ -1,6 +1,6 @@
 #im-a {
-  background: var(--im-a-500);
-  background: radial-gradient(circle, var(--im-a-500), var(--im-a-300));
+  background: #90001f;
+  background: radial-gradient(circle, #90001f, #ff2957);
 }
 #im-a a {
   text-decoration: none;

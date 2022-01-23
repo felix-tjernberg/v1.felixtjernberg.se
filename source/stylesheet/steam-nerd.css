@@ -1,6 +1,6 @@
 #steam-nerd {
-  background: var(--steam-500);
-  background: linear-gradient(0deg, var(--steam-500), var(--steam-300));
+  background: #675800;
+  background: linear-gradient(0deg, #675800, #ffdc00);
   padding-bottom: calc(var(--section-padding-block) * 2);
 }
 

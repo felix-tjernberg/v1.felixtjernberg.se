@@ -1,5 +1,5 @@
 #football-coach {
-  background-color: var(--football-coach-100);
+  background-color: #74beff;
 }
 #football-coach > h2 {
   font-size: calc(var(--heading-font-size) * 0.8);
