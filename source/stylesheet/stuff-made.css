@@ -47,6 +47,9 @@
   transform: var(--right-tape-transform);
   width: var(--right-tape-length);
 }
+.polaroid :focus {
+  outline: 3px solid black;
+}
 
 .polaroid > a {
   margin-top: 3em;

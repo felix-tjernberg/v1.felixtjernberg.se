@@ -23,17 +23,29 @@
   margin-top: 1em;
   padding: 25px;
   place-content: center;
+  position: relative;
 }
 .fullstack-link-section .glass-background :first-child {
   margin-top: auto;
 }
-.fullstack-link-section a {
+.fullstack-link-section a:not(.navigation-skip) {
   --scale: 1.3;
   margin: 25px;
 }
 .fullstack-link-section svg {
   height: 50px;
   width: 50px;
+}
+
+.jump-end {
+  top: 0;
+}
+
+.jump-start {
+  bottom: 0;
+}
+.navigation-skip.jump-start:focus {
+  transform: translate(-50%, -50%) scale(100%);
 }
 
 @media (max-width: 625px) {

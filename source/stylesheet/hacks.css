@@ -15,7 +15,7 @@
   bottom: -1px;
 }
 
-.fullstack-link-section a {
+.fullstack-link-section a:not(.navigation-skip) {
   font-size: 0px; /* Removes unexplained height gain, height was 55px before this hack */
   text-decoration: none; /* On some browsers there is small point of underline rendered */
 }
