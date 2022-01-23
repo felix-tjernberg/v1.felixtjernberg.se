@@ -1,13 +1,9 @@
 #contact {
   background-color: var(--contact-100);
 }
+
 #contact .glass-background a {
   margin-top: 0;
-}
-#contact .glass-background a > svg {
-  margin-right: 3px;
-  height: 1em;
-  width: 1em;
 }
 
 #contact .bigger-text {

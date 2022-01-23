@@ -24,6 +24,19 @@
   }
 }
 
+.link-with-svg {
+  display: flex;
+  place-content: center;
+}
+.link-with-svg svg {
+  margin-right: 3px;
+  height: 1em;
+  width: 1em;
+}
+.link-with-svg > * {
+  margin: auto 0;
+}
+
 .smaller-text {
   font-size: 0.6em;
 }
