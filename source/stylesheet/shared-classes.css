@@ -27,9 +27,10 @@
 .link-with-svg {
   display: flex;
   place-content: center;
+  line-height: 1;
 }
 .link-with-svg svg {
-  margin-right: 3px;
+  margin-right: 0.5ch;
   height: 1em;
   width: 1em;
 }
