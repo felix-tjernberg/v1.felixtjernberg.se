@@ -55,6 +55,23 @@
   transform: translate(-50%, -70%);
 }
 
+.crowd-wave {
+  --delay: 0s;
+  animation: crowd-wave 3s infinite;
+  animation-delay: var(--delay);
+}
+@keyframes crowd-wave {
+  0% {
+    transform: translateY(0px, 0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 @media (min-width: 1500px) {
   #american-football-bro {
     right: 10%;
