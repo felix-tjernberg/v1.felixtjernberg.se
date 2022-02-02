@@ -48,7 +48,7 @@ main > section {
 
 a {
   display: inline-block;
-  transition: transform 0.1s;
+  transition: transform 0.05s;
 }
 a:hover {
   --scale: 1.1;
