@@ -8,6 +8,9 @@
 #footer h2 {
   font-size: 2em;
 }
+#footer h2:not(:first-of-type) {
+  margin-top: 1em;
+}
 #footer a:last-of-type {
   margin-top: 4em;
 }
