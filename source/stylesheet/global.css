@@ -39,6 +39,7 @@ p {
 main > header,
 main > section {
   display: grid;
+  justify-items: center;
   min-height: 100vh;
   padding-block: calc(var(--section-padding-block) + var(--heading-font-size));
   place-content: center;

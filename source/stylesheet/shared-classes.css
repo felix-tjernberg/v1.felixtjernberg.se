@@ -8,7 +8,7 @@
   border-radius: 100% / 20%;
   box-shadow: 0 32px 80px -32px black;
   margin: var(--paragraf-font-size);
-  padding: 2em 1em;
+  padding: 2em;
   z-index: 3;
 }
 .glass-background[data-allow-process-intensive] {
