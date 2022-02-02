@@ -1,5 +1,11 @@
 #stuff-made {
   background-color: #00ffdc;
+  background-image: linear-gradient(#ffffff99 2px, transparent 2px),
+    linear-gradient(90deg, #ffffff99 2px, transparent 2px),
+    linear-gradient(#ffffff42 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff42 1px, transparent 1px);
+  background-size: 420px 420px, 420px 420px, 42px 42px, 42px 40px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 
 #polaroid-gallery {
