@@ -21,6 +21,7 @@
   flex-wrap: wrap;
   font-size: 1rem;
   margin-top: 1em;
+  max-width: 800px;
   padding: 25px;
   place-content: center;
   position: relative;
