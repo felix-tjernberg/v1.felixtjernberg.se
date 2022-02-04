@@ -11,3 +11,7 @@
 #contact .glass-background a:nth-last-of-type(1) {
   margin-bottom: 1em;
 }
+
+#contact-transition {
+  transform: translateY(-50%) scale(110%);
+}
