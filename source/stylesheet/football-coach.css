@@ -65,6 +65,7 @@
 .play {
   width: 30%;
   position: absolute;
+  opacity: 0.3;
 }
 
 .absolute-container-centered-elements {
