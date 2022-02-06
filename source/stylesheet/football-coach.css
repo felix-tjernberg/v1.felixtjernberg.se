@@ -127,3 +127,18 @@
     background-color: #3b3b3bb4;
   }
 }
+
+@media (max-width: 1020px) {
+  .play {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1020px) {
+  #play-thing {
+    top: 10%;
+  }
+  #play-super-girl {
+    top: 20%;
+  }
+}
