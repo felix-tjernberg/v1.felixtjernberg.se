@@ -49,6 +49,27 @@
   font-size: 1.6em;
 }
 
+#play-thing,
+#play-super-girl {
+  top: calc(var(--section-padding-block) + 1%);
+}
+#play-thor,
+#play-lantern {
+  bottom: calc(var(--section-padding-block) + 1%);
+}
+#play-thing,
+#play-thor {
+  left: 1%;
+}
+#play-super-girl,
+#play-lantern {
+  right: 1%;
+}
+.play {
+  width: 30%;
+  position: absolute;
+}
+
 .absolute-container-centered-elements {
   position: absolute;
   inset: 33% 0 0 0;
