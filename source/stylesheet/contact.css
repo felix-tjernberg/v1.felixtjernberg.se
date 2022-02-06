@@ -26,3 +26,9 @@
   box-shadow: 0 32px 80px -32px black;
   transform: rotate(13deg) translateY(-42%);
 }
+
+@media (max-width: 450px) {
+  #contact-phone {
+    display: none;
+  }
+}
