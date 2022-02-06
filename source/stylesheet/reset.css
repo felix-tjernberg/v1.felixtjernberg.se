@@ -48,6 +48,14 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
