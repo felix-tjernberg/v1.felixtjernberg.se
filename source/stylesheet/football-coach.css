@@ -9,8 +9,6 @@
   position: relative;
   z-index: 2;
   height: 100%;
-  animation: coach-walk 4.5s infinite;
-  transition-timing-function: cubic-bezier(1, 1, 0, 0);
 }
 
 #felix-coach-background {
@@ -88,29 +86,6 @@
 .perspective-text {
   display: inline-block;
   transform: skew(15deg) rotate3d(10, 0, -1, 30deg);
-}
-
-@keyframes coach-walk {
-  0% {
-    left: -0.05%;
-    top: 0%;
-  }
-  25% {
-    left: 0%;
-    top: -1%;
-  }
-  50% {
-    left: 0.05%;
-    top: 0%;
-  }
-  75% {
-    left: 0%;
-    top: -1%;
-  }
-  100% {
-    left: -0.05%;
-    top: -0%;
-  }
 }
 
 @media (min-width: 1100px) {

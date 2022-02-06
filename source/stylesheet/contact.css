@@ -22,13 +22,12 @@
 
 #contact-phone {
   position: absolute;
-  right: 0;
-  max-height: 42%;
-  box-shadow: 0 32px 80px -32px black;
-  transform: rotate(13deg) translateY(-42%);
+  right: -10%;
+  bottom: -10%;
+  max-height: 50%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   #contact-phone {
     display: none;
   }

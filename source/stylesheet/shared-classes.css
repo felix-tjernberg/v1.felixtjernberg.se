@@ -24,6 +24,29 @@
   }
 }
 
+.head-bob {
+  animation: head-bob 4.5s infinite;
+  transition-timing-function: cubic-bezier(1, 1, 0, 0);
+}
+
+@keyframes head-bob {
+  0% {
+    transform: translate(-0.5%, 0%);
+  }
+  25% {
+    transform: translate(0%, -1%);
+  }
+  50% {
+    transform: translate(0.5%, 0%);
+  }
+  75% {
+    transform: translate(0%, -1%);
+  }
+  100% {
+    transform: translate(-0.5%, 0%);
+  }
+}
+
 .link-with-svg {
   display: flex;
   place-content: center;
