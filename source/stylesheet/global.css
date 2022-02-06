@@ -27,7 +27,8 @@ h2 {
 
 a,
 h3,
-p {
+p,
+button {
   font-family: 'Ubuntu', sans-serif;
   margin-top: 1em;
 }
