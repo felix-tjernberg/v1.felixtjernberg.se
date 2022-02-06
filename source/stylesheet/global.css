@@ -80,3 +80,9 @@ nav ol {
     min-height: 50vh;
   }
 }
+
+@media (max-width: 1100px) and (min-height: 1200px) {
+  main > section {
+    min-height: 50vh;
+  }
+}

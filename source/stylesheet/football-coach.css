@@ -132,9 +132,6 @@
   .play {
     width: 50%;
   }
-}
-
-@media (max-width: 1020px) {
   #play-thing {
     top: 10%;
   }
