@@ -53,6 +53,19 @@
   transform: translate(-50%, -50%) scale(100%);
 }
 
+@media (max-width: 420px) {
+  #fullstack-developer .glass-background {
+    padding: 2em 0;
+  }
+  #fullstack-developer .glass-background p {
+    padding: 1em 2em;
+  }
+  .fullstack-link-section .glass-background {
+    padding: 25px 0;
+    margin: 0;
+  }
+}
+
 @media (max-width: 625px) {
   #fullstack-developer > .glass-background {
     border-radius: 25px;
