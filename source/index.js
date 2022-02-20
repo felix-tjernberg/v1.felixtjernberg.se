@@ -22,9 +22,11 @@ document.querySelector('#test1').addEventListener('click', () => {
   toggleAllowProcessIntensive()
 })
 
-document.querySelector('#navigation-button').addEventListener('click', () => {
-  toggleNavigation()
-})
+document
+  .querySelector('#open-navigation-button')
+  .addEventListener('click', () => {
+    toggleNavigation()
+  })
 
 document.querySelectorAll('#navigation-list a').forEach((element) => {
   return element.addEventListener('click', () => {
