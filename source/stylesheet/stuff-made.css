@@ -7,6 +7,9 @@
   background-size: 420px 420px, 420px 420px, 42px 42px, 42px 40px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
+#stuff-made > p {
+  text-shadow: 0px 3px 7px #000000a0;
+}
 
 #polaroid-gallery {
   align-items: start;
@@ -96,11 +99,8 @@
 .line-clamp p {
   margin-top: 0;
 }
-.line-clamp-button {
+.line-clamp span.focus {
   display: none;
-}
-.line-clamp-button span {
-  pointer-events: none;
 }
 
 @supports (-webkit-line-clamp: 2) {
@@ -114,14 +114,17 @@
   .line-clamp:focus-within {
     -webkit-line-clamp: initial;
   }
-
-  .line-clamp-button {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  .line-clamp p {
+    position: relative;
   }
-  .line-clamp[data-expanded] + button .pointer-icon {
-    order: -1;
-    transform: rotate(180deg);
+  .line-clamp span.focus {
+    display: block;
+    position: absolute;
+    inset: 0;
+    transform: scale(0%);
+    transition: scale;
+  }
+  .line-clamp span.focus:focus {
+    transform: scale(100%);
   }
 }

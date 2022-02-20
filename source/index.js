@@ -31,7 +31,7 @@ document
     })
   })
 
-document.querySelectorAll('.line-clamp-button').forEach((element) => {
+document.querySelectorAll('.line-clamp').forEach((element) => {
   return element.addEventListener('click', ({ target }) => {
     toggleLineClamp(target)
   })
