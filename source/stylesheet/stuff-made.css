@@ -79,7 +79,8 @@
 }
 .polaroid a,
 .polaroid h3,
-.polaroid p {
+.polaroid p,
+.polaroid button {
   color: #0f0f0f;
 }
 .polaroid,
