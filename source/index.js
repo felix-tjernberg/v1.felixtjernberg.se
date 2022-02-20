@@ -12,7 +12,6 @@ import 'Stylesheet/stuff-made.css'
 import 'Stylesheet/contact.css'
 import 'Stylesheet/footer.css'
 import 'Stylesheet/hacks.css'
-import 'Stylesheet/test.css'
 
 import toggleAllowProcessIntensive from 'Javascript/toggleAllowProcessIntensive.js'
 import toggleLineClamp from 'Javascript/toggleLineClamp.js'
