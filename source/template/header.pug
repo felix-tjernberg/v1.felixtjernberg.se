@@ -1,5 +1,9 @@
 h1(class='three-dimensional-text') Felix Tjernberg
-div(class='glass-background' tabindex='0')
-  p Welcome to my part of the interwebs
-  a(href='#im-a') Let me introduce myself below
-button(id='test1' ) Enable effect heavy stuff
+div(class='glass-background')
+  p(tabindex='0') Welcome to my part of the interwebs
+  a(id='introduce-text' href='#im-a') Let me introduce myself below
+  p(class='smaller-text' tabindex='0') Or you can
+  div
+    a(id='jump-to-stuff-made' href='#stuff-made' class='smaller-text') Jump to stuff I made
+    a(id='jump-to-contact' href='#stuff-made' class='smaller-text') Jump to contact area
+button(id='test1' style='margin-top: 2em') Enable effect heavy stuff

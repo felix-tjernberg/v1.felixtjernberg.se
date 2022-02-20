@@ -3,6 +3,23 @@
   background: radial-gradient(circle, #734f1e, #3d2709);
 }
 
-#felix-tjernberg-header .glass-background {
+#felix-tjernberg-header > .glass-background {
   padding: 1.5em 2em 2em 2em;
+}
+#felix-tjernberg-header > .glass-background > p:last-of-type {
+  margin-top: 2em;
+}
+#felix-tjernberg-header > .glass-background > div {
+  display: flex;
+  place-content: space-between;
+}
+
+#introduce-text {
+  color: #ff7693;
+}
+#jump-to-stuff-made {
+  color: #9afff1;
+}
+#jump-to-contact {
+  color: #ba91ff;
 }
