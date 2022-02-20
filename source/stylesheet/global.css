@@ -48,20 +48,17 @@ main > section {
   position: relative;
 }
 
-a {
+a,
+#close-navigation-button,
+#open-navigation-button {
   display: inline-block;
   transition: transform 0.05s;
 }
-a:hover {
+a:hover,
+#close-navigation-button:hover,
+#open-navigation-button:hover {
   --scale: 1.1;
   transform: scale(var(--scale));
-}
-
-h3,
-p,
-#felix-tjernberg-header a,
-#im-a a {
-  display: block;
 }
 
 #im-a h2,

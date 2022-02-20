@@ -22,16 +22,14 @@ document.querySelector('#test1').addEventListener('click', () => {
 })
 
 document
-  .querySelector('#open-navigation-button')
-  .addEventListener('click', () => {
-    toggleNavigation()
+  .querySelectorAll(
+    '#close-navigation-button, #navigation-list a, #open-navigation-button'
+  )
+  .forEach((element) => {
+    return element.addEventListener('click', () => {
+      toggleNavigation()
+    })
   })
-
-document.querySelectorAll('#navigation-list a').forEach((element) => {
-  return element.addEventListener('click', () => {
-    toggleNavigation()
-  })
-})
 
 document.querySelectorAll('.line-clamp-button').forEach((element) => {
   return element.addEventListener('click', ({ target }) => {

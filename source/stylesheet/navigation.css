@@ -6,9 +6,15 @@ nav ol,
 }
 nav ol,
 nav a,
+#close-navigation-button,
 #open-navigation-button {
   text-align: right;
   font-size: max(3vh, 1rem);
+}
+
+#close-navigation-button,
+#open-navigation-button {
+  cursor: pointer;
 }
 
 nav ol {
@@ -50,7 +56,8 @@ nav ol > li:nth-of-type(7) a {
 nav ol > li:nth-of-type(8) a {
   color: #5c00f6;
 }
-nav ol a {
+nav ol a,
+#close-navigation-button {
   margin-top: auto;
   margin-right: 1em;
 }
@@ -65,8 +72,4 @@ nav ol a {
 nav ol:focus-within + #open-navigation-button,
 #open-navigation-button[data-show-navigation] {
   transform: scale(0%);
-}
-
-#close-navigation-button {
-  cursor: pointer;
 }
