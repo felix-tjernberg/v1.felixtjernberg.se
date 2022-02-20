@@ -1,5 +1,5 @@
 #football-coach {
-  background-color: #74beff;
+  background-color: #279aff;
 }
 #football-coach > h2 {
   font-size: calc(var(--heading-font-size) * 0.8);
@@ -65,7 +65,7 @@
 .play {
   width: 30%;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .absolute-container-centered-elements {
