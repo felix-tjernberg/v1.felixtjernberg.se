@@ -16,16 +16,25 @@
   background-color: #464646b5;
 }
 
+#im-a a:nth-child(1) {
+  color: #13aa2b;
+}
 #im-a a:nth-child(1)::after,
 #im-a a:nth-child(1)::before {
   content: ' 💻 ';
 }
 
+#im-a a:nth-child(2) {
+  color: #279aff;
+}
 #im-a a:nth-child(2)::after,
 #im-a a:nth-child(2)::before {
   content: ' 🏈 ';
 }
 
+#im-a a:nth-child(3) {
+  color: #ffdc00;
+}
 #im-a a:nth-child(3)::after,
 #im-a a:nth-child(3)::before {
   content: ' 🧬 ';
