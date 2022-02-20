@@ -26,6 +26,12 @@ document.querySelector('#navigation-button').addEventListener('click', () => {
   toggleNavigation()
 })
 
+document.querySelectorAll('#navigation-list a').forEach((element) => {
+  return element.addEventListener('click', () => {
+    toggleNavigation()
+  })
+})
+
 document.querySelectorAll('.line-clamp-button').forEach((element) => {
   return element.addEventListener('click', ({ target }) => {
     toggleLineClamp(target)
