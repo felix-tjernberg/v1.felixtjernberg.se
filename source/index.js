@@ -33,9 +33,3 @@ document.querySelectorAll('.line-clamp-button').forEach((element) => {
     toggleLineClamp(target)
   })
 })
-
-window.onload = () => {
-  if (window.innerHeight > 500 && window.innerWidth > 999) {
-    document.querySelector('#navigation-button').click()
-  }
-}
