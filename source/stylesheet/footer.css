@@ -1,8 +1,7 @@
 #footer {
-  display: flex;
+  display: grid;
   font-size: 1rem;
-  flex-direction: column;
-  place-content: center;
+  place-items: center;
   margin-top: var(--heading-font-size);
 }
 #footer h2 {
