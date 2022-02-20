@@ -7,6 +7,8 @@
   background-color: #46464657;
   border-radius: 100% / 20%;
   box-shadow: 0 32px 80px -32px black;
+  display: grid;
+  place-items: center;
   margin: var(--paragraf-font-size);
   padding: 2em;
   z-index: 3;
@@ -48,7 +50,7 @@
 }
 
 .link-with-svg {
-  display: flex;
+  display: inline-flex;
   place-content: center;
   line-height: 1;
 }

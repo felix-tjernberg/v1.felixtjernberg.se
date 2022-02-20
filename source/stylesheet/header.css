@@ -12,6 +12,7 @@
 #felix-tjernberg-header > .glass-background > div {
   display: flex;
   place-content: space-between;
+  width: 100%;
 }
 
 #introduce-text {

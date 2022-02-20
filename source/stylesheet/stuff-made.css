@@ -24,6 +24,7 @@
 
   background-color: white;
   box-shadow: 0 32px 80px -32px black;
+  align-items: center;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
@@ -109,7 +110,8 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
-  .line-clamp[data-expanded] {
+  .line-clamp[data-expanded],
+  .line-clamp:focus-within {
     -webkit-line-clamp: initial;
   }
 
