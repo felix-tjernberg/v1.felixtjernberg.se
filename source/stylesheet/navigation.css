@@ -36,7 +36,7 @@ nav ol:focus-within {
   transform: translateX(0%);
 }
 nav ol > li:nth-of-type(2) a {
-  color: #5e3f16;
+  color: #b0792e;
 }
 nav ol > li:nth-of-type(3) a {
   color: #ff2957;
